@@ -5,6 +5,10 @@
 //  Created by Sonja Ek on 18.10.2020.
 //
 
+// TODO:
+// - Setting the value of useRedText somewhere after its initialization
+// - Changing the "-NaN" in "Amount per person" -field as the program starts
+
 import SwiftUI
 
 
@@ -25,6 +29,10 @@ struct ContentView: View {
         let tipValue = orderAmount / 100 * tipSelection
         let grandTotal = orderAmount + tipValue
         
+        // This causes an error:
+        // if tipSelection == 0 {
+        //     useRedText = true
+        // }
         
         return grandTotal
     }
