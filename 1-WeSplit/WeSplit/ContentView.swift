@@ -77,7 +77,7 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Amount per person")) {
-                    // BUG AHOY: this output shows "NaN€" when the program starts. It should be "0.00€".
+                    // BUG AHOY: this output shows "-NaN€" when the program starts. It should be "0.00€".
                     Text("\(totalPerPerson, specifier: "%.2f")€")
                 }
             }
