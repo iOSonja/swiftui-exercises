@@ -6,7 +6,6 @@
 //
 
 // TODO:
-// - Setting the value of useRedText somewhere after its initialization
 // - Changing the "-NaN" in "Amount per person" -field as the program starts
 
 import SwiftUI
@@ -17,7 +16,6 @@ struct ContentView: View {
     @State private var checkAmount = ""
     @State private var checkNumberOfPeople = ""
     @State private var tipPercentage = 2
-    @State private var useRedText = false
         
     let tipPercentages = [10, 15, 20, 25, 0]
     
@@ -28,11 +26,6 @@ struct ContentView: View {
         
         let tipValue = orderAmount / 100 * tipSelection
         let grandTotal = orderAmount + tipValue
-        
-        // This causes an error:
-        // if tipSelection == 0 {
-        //     useRedText = true
-        // }
         
         return grandTotal
     }
@@ -55,7 +48,6 @@ struct ContentView: View {
                 
                     TextField("Number of people", text: $checkNumberOfPeople)
                         .keyboardType(.decimalPad)
-                    
                 }
                 
                 Section(header: Text("How much tip do you want to leave?")) {
@@ -69,7 +61,7 @@ struct ContentView: View {
                 
                 Section(header: Text("Total amount")) {
                     Text("\(totalAmount, specifier: "%.2f")€")
-                        .foregroundColor(useRedText ? .red : .black)
+                        .foregroundColor(tipPercentages[tipPercentage] == 0 ? .red : .black)
                 }
                 
                 Section(header: Text("Amount per person")) {
@@ -79,7 +71,6 @@ struct ContentView: View {
             .navigationBarTitle("WeSplit")
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
