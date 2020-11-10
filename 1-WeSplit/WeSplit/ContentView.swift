@@ -7,7 +7,7 @@
 
 // TODO:
 // - Something should be done about the "-NaN" in "Amount per person" -field as the program starts
-// - Also: the same field shows infinity when "Amount" has a number set but "Number of people" doesn't.
+// - Also: the same field shows infinity when "Amount" has received input but "Number of people" hasn't.
 
 import SwiftUI
 
@@ -22,6 +22,8 @@ struct ContentView: View {
     
     
     var totalAmount: Double {
+        // This function calculates the overall value with tip included
+        
         let tipSelection = Double(tipPercentages[tipPercentage])
         var orderAmount = Double(checkAmount) ?? 0
         // Not accepting negative values:
@@ -36,6 +38,8 @@ struct ContentView: View {
     }
     
     var totalPerPerson: Double {
+        // This function calculates how much of the bill each person has to pay
+        
         var peopleCount = Double(checkNumberOfPeople) ?? 0
         // Not accepting negative values:
         if !(peopleCount > 0) {
@@ -68,11 +72,12 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Total amount")) {
-                    Text("\(totalAmount, specifier: "%.2f")€")
+                    Text("\(totalAmount, specifier: "%.2f")€") // no problem with the output here
                         .foregroundColor(tipPercentages[tipPercentage] == 0 ? .red : .black)
                 }
                 
                 Section(header: Text("Amount per person")) {
+                    // BUG AHOY: this output shows "NaN€" when the program starts
                     Text("\(totalPerPerson, specifier: "%.2f")€")
                 }
             }
