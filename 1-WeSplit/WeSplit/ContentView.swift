@@ -7,6 +7,7 @@
 
 // TODO:
 // - Changing the "-NaN" in "Amount per person" -field as the program starts
+// - Also: the same field shows infinity when "Amount" has a number set but "Number of people" doesn't.
 
 import SwiftUI
 
@@ -31,10 +32,9 @@ struct ContentView: View {
     }
     
     var totalPerPerson: Double {
-        let peopleCount = Double(Double(checkNumberOfPeople) ?? 0)
-        let grandTotal = totalAmount
+        let peopleCount = Double(checkNumberOfPeople) ?? 0
 
-        let amountPerPerson = grandTotal / peopleCount
+        let amountPerPerson = totalAmount / peopleCount
         
         return amountPerPerson
     }
