@@ -6,7 +6,7 @@
 //
 
 // TODO:
-// - Changing the "-NaN" in "Amount per person" -field as the program starts
+// - Something should be done about the "-NaN" in "Amount per person" -field as the program starts
 // - Also: the same field shows infinity when "Amount" has a number set but "Number of people" doesn't.
 
 import SwiftUI
@@ -23,7 +23,11 @@ struct ContentView: View {
     
     var totalAmount: Double {
         let tipSelection = Double(tipPercentages[tipPercentage])
-        let orderAmount = Double(checkAmount) ?? 0
+        var orderAmount = Double(checkAmount) ?? 0
+        // Not accepting negative values:
+        if !(orderAmount > 0) {
+            orderAmount = 0
+        }
         
         let tipValue = orderAmount / 100 * tipSelection
         let grandTotal = orderAmount + tipValue
@@ -32,7 +36,11 @@ struct ContentView: View {
     }
     
     var totalPerPerson: Double {
-        let peopleCount = Double(checkNumberOfPeople) ?? 0
+        var peopleCount = Double(checkNumberOfPeople) ?? 0
+        // Not accepting negative values:
+        if !(peopleCount > 0) {
+            peopleCount = 0
+        }
 
         let amountPerPerson = totalAmount / peopleCount
         
