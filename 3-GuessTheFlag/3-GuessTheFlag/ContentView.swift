@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct Title: ViewModifier {
-    func body(content: Content) -> some View {
-        content
+struct FlagImage: View {
+    var image: String
+        
+    var body: some View {
+        Image(image)
             .renderingMode(.original)
             .clipShape(Capsule())
             .overlay(Capsule().stroke(Color.black, lineWidth: 1))
             .shadow(color: .black, radius: 2)
     }
 }
+
 
 struct ContentView: View {
     
@@ -45,8 +48,7 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                        Image((self.countries[number]).lowercased())
-                            .titleStyle()
+                        FlagImage(image: (self.countries[number]).lowercased())
 
                     }
                 }
@@ -88,12 +90,6 @@ struct ContentView: View {
     }
 }
 
-
-extension View {
-    func titleStyle() -> some View {
-        self.modifier(Title())
-    }
-}
 
 
 struct ContentView_Previews: PreviewProvider {
