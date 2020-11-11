@@ -23,8 +23,9 @@ struct FlagImage: View {
 
 struct ContentView: View {
     
-    @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
-    @State private var correctAnswer = Int.random(in: 0...2) // This picks 3 flags to be shown; one of them is right
+    @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria",
+                                    "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    @State private var correctAnswer = Int.random(in: 0...2) // This picks 3 flags to be shown
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
@@ -58,9 +59,11 @@ struct ContentView: View {
             }
         }
         
-        // A banner shows after each button press telling whether the answer was correct and the current score
+        // A banner shows after each button press telling whether the answer was correct and the
+        // current score
         .alert(isPresented: $showingScore) {
-            Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
+            Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton:
+                .default(Text("Continue")) {
                     self.askQuestion()
             })
         }
