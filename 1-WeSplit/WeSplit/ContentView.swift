@@ -5,9 +5,6 @@
 //  Created by Sonja Ek on 18.10.2020.
 //
 
-// TODO:
-// - Something should be done about the "-NaN" in "Amount per person" -field as the program starts
-// - Also: the same field shows infinity when "Amount" has received input but "Number of people" hasn't.
 
 import SwiftUI
 
@@ -25,11 +22,7 @@ struct ContentView: View {
         // This function calculates the overall value with tip included
         
         let tipSelection = Double(tipPercentages[tipPercentage])
-        var orderAmount = Double(checkAmount) ?? 0
-        // Not accepting negative values:
-        if !(orderAmount > 0) {
-            orderAmount = 0
-        }
+        let orderAmount = Double(checkAmount) ?? 0
         
         let tipValue = orderAmount / 100 * tipSelection
         let grandTotal = orderAmount + tipValue
@@ -40,12 +33,10 @@ struct ContentView: View {
     var totalPerPerson: Double {
         // This function calculates how much of the bill each person has to pay
         
-        var peopleCount = Double(checkNumberOfPeople) ?? 0
-        // Not accepting negative values:
-        if !(peopleCount > 0) {
-            peopleCount = 0
-        }
+        let peopleCount = Double(checkNumberOfPeople) ?? 0
 
+        guard totalAmount > 0 && peopleCount > 0 else { return 0 }
+        
         let amountPerPerson = totalAmount / peopleCount
         
         return amountPerPerson
@@ -72,12 +63,11 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Total amount")) {
-                    Text("\(totalAmount, specifier: "%.2f")€") // no problem with the output here
+                    Text("\(totalAmount, specifier: "%.2f")€")
                         .foregroundColor(tipPercentages[tipPercentage] == 0 ? .red : .black)
                 }
                 
                 Section(header: Text("Amount per person")) {
-                    // BUG AHOY: this output shows "-NaN€" when the program starts. It should be "0.00€".
                     Text("\(totalPerPerson, specifier: "%.2f")€")
                 }
             }
