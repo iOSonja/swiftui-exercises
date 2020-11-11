@@ -32,7 +32,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint:
+                            .bottom).edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 30) {
                 VStack {
@@ -63,7 +64,7 @@ struct ContentView: View {
         // current score
         .alert(isPresented: $showingScore) {
             Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton:
-                .default(Text("Continue")) {
+                    .default(Text("Continue")) {
                     self.askQuestion()
             })
         }
