@@ -8,7 +8,7 @@
 //TODO:
 //- Find a way to give exactly 10 challenges
 //- Handle tie cases
-//- Style the buttons
+//- Style the buttons differently
 //- Create a banner that tells the number of points in the end
 
 import SwiftUI
@@ -87,6 +87,7 @@ struct ContentView: View {
                 }) {
                     Text("Rock")
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 Button(action: {
                     correctMove = self.moveMade("Paper")
@@ -94,6 +95,7 @@ struct ContentView: View {
                 }) {
                     Text("Paper")
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 Button(action: {
                     correctMove = self.moveMade("Scissors")
@@ -101,6 +103,7 @@ struct ContentView: View {
                 }) {
                     Text("Scissors")
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 if correctMove {
                     Text("You made the right move.")
