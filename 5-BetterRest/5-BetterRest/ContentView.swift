@@ -5,6 +5,7 @@
 //  Created by Sonja Ek on 17.11.2020.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
@@ -20,8 +21,6 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section(header: Text("When do you want to wake up?")) {
-                    // Text("When do you want to wake up?")
-                        // .font(.headline)
                     
                     DatePicker("Please enter a date", selection:
                         $wakeUp, displayedComponents:
@@ -93,7 +92,6 @@ struct ContentView: View {
         
         showingAlert = true
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
