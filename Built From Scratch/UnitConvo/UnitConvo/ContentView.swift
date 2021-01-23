@@ -4,11 +4,11 @@
 //
 //  Created by Sonja Ek on 21.10.2020.
 //
-
 //TODO:
 //- Allow conversion to the other direction
 //- Make changes to the UI to make it look nicer
 //- Add documentation
+
 
 import SwiftUI
 
