@@ -4,8 +4,7 @@
 //
 //  Created by Sonja Ek on 23.10.2020.
 //
-// TODO: two remaining tasks for challenge day 34
-// - Make the other two buttons fade out to 25% opacity.
+// TODO: one remaining task for challenge day 34
 // - And if you tap on the wrong flag? Well, that’s down to you – get creative!
 
 
@@ -35,6 +34,7 @@ struct ContentView: View {
     @State private var score = 0
     
     @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
     
     var body: some View {
         ZStack {
@@ -53,11 +53,13 @@ struct ContentView: View {
                 
                 ForEach(0 ..< 3) { number in
                     Button(action: {
+                        self.opacityAmount = 0.8
                         self.flagTapped(number)
                     }) {
                         FlagImage(image: (self.countries[number]))
                     }
                     .rotation3DEffect(.degrees(number == self.correctAnswer ? self.animationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                    .opacity(number == self.correctAnswer ? 1 : self.opacityAmount)
                 }
                 
                 Text("Current score: \(score)")
@@ -100,6 +102,10 @@ struct ContentView: View {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         self.animationAmount = 0.0
+        withAnimation(.easeInOut) {
+            self.opacityAmount = 1.0
+        }
+
     }
 }
 
