@@ -4,6 +4,9 @@
 //
 //  Created by Sonja Ek on 23.10.2020.
 //
+// TODO: one remaining task for challenge day 34
+// - And if you tap on the wrong flag? Well, that’s down to you – get creative!
+
 
 import SwiftUI
 
@@ -30,6 +33,9 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     
+    @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint:
@@ -47,10 +53,13 @@ struct ContentView: View {
                 
                 ForEach(0 ..< 3) { number in
                     Button(action: {
+                        self.opacityAmount = 0.8
                         self.flagTapped(number)
                     }) {
                         FlagImage(image: (self.countries[number]))
                     }
+                    .rotation3DEffect(.degrees(number == self.correctAnswer ? self.animationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                    .opacity(number == self.correctAnswer ? 1 : self.opacityAmount)
                 }
                 
                 Text("Current score: \(score)")
@@ -74,6 +83,11 @@ struct ContentView: View {
         if number == correctAnswer  {
             scoreTitle = "Correct"
             score += 10
+            self.animationAmount += 0.0
+            
+            withAnimation(.interpolatingSpring(stiffness: 20, damping: 5)) {
+                self.animationAmount = 360
+            }
         } else {
             scoreTitle = "Wrong! That is the flag of \(countries[number])."
             if score - 2 >= 0 {
@@ -87,6 +101,11 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        self.animationAmount = 0.0
+        withAnimation(.easeInOut) {
+            self.opacityAmount = 1.0
+        }
+
     }
 }
 

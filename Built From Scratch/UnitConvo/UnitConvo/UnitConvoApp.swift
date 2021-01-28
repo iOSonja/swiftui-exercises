@@ -1,14 +1,14 @@
 //
-//  __UnitConvoApp.swift
-//  2-UnitConvo
+//  UnitConvoApp.swift
+//  UnitConvo
 //
-//  Created by Sonja Ek on 12.11.2020.
+//  Created by Sonja Ek on 23.1.2021.
 //
 
 import SwiftUI
 
 @main
-struct __UnitConvoApp: App {
+struct UnitConvoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

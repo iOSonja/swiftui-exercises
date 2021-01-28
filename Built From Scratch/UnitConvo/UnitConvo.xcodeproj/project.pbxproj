@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E971796E255DC900001301B6 /* __UnitConvoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971796D255DC900001301B6 /* __UnitConvoApp.swift */; };
-		E9717970255DC900001301B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971796F255DC900001301B6 /* ContentView.swift */; };
-		E9717972255DC904001301B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9717971255DC904001301B6 /* Assets.xcassets */; };
-		E9717975255DC904001301B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9717974255DC904001301B6 /* Preview Assets.xcassets */; };
+		E9374A0B25BCC687000F3077 /* UnitConvoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9374A0A25BCC687000F3077 /* UnitConvoApp.swift */; };
+		E9374A0D25BCC687000F3077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9374A0C25BCC687000F3077 /* ContentView.swift */; };
+		E9374A0F25BCC688000F3077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9374A0E25BCC688000F3077 /* Assets.xcassets */; };
+		E9374A1225BCC688000F3077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9374A1125BCC688000F3077 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E971796A255DC900001301B6 /* 2-UnitConvo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2-UnitConvo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E971796D255DC900001301B6 /* __UnitConvoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UnitConvoApp.swift; sourceTree = "<group>"; };
-		E971796F255DC900001301B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E9717971255DC904001301B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9717974255DC904001301B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E9717976255DC904001301B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9374A0725BCC687000F3077 /* UnitConvo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitConvo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9374A0A25BCC687000F3077 /* UnitConvoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvoApp.swift; sourceTree = "<group>"; };
+		E9374A0C25BCC687000F3077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9374A0E25BCC688000F3077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9374A1125BCC688000F3077 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9374A1325BCC688000F3077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9717967255DC900001301B6 /* Frameworks */ = {
+		E9374A0425BCC687000F3077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9717961255DC900001301B6 = {
+		E93749FE25BCC687000F3077 = {
 			isa = PBXGroup;
 			children = (
-				E971796C255DC900001301B6 /* 2-UnitConvo */,
-				E971796B255DC900001301B6 /* Products */,
+				E9374A0925BCC687000F3077 /* UnitConvo */,
+				E9374A0825BCC687000F3077 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E971796B255DC900001301B6 /* Products */ = {
+		E9374A0825BCC687000F3077 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E971796A255DC900001301B6 /* 2-UnitConvo.app */,
+				E9374A0725BCC687000F3077 /* UnitConvo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E971796C255DC900001301B6 /* 2-UnitConvo */ = {
+		E9374A0925BCC687000F3077 /* UnitConvo */ = {
 			isa = PBXGroup;
 			children = (
-				E971796D255DC900001301B6 /* __UnitConvoApp.swift */,
-				E971796F255DC900001301B6 /* ContentView.swift */,
-				E9717971255DC904001301B6 /* Assets.xcassets */,
-				E9717976255DC904001301B6 /* Info.plist */,
-				E9717973255DC904001301B6 /* Preview Content */,
+				E9374A0A25BCC687000F3077 /* UnitConvoApp.swift */,
+				E9374A0C25BCC687000F3077 /* ContentView.swift */,
+				E9374A0E25BCC688000F3077 /* Assets.xcassets */,
+				E9374A1325BCC688000F3077 /* Info.plist */,
+				E9374A1025BCC688000F3077 /* Preview Content */,
 			);
-			path = "2-UnitConvo";
+			path = UnitConvo;
 			sourceTree = "<group>";
 		};
-		E9717973255DC904001301B6 /* Preview Content */ = {
+		E9374A1025BCC688000F3077 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E9717974255DC904001301B6 /* Preview Assets.xcassets */,
+				E9374A1125BCC688000F3077 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -72,38 +72,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9717969255DC900001301B6 /* 2-UnitConvo */ = {
+		E9374A0625BCC687000F3077 /* UnitConvo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9717979255DC904001301B6 /* Build configuration list for PBXNativeTarget "2-UnitConvo" */;
+			buildConfigurationList = E9374A1625BCC688000F3077 /* Build configuration list for PBXNativeTarget "UnitConvo" */;
 			buildPhases = (
-				E9717966255DC900001301B6 /* Sources */,
-				E9717967255DC900001301B6 /* Frameworks */,
-				E9717968255DC900001301B6 /* Resources */,
+				E9374A0325BCC687000F3077 /* Sources */,
+				E9374A0425BCC687000F3077 /* Frameworks */,
+				E9374A0525BCC687000F3077 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "2-UnitConvo";
-			productName = "2-UnitConvo";
-			productReference = E971796A255DC900001301B6 /* 2-UnitConvo.app */;
+			name = UnitConvo;
+			productName = UnitConvo;
+			productReference = E9374A0725BCC687000F3077 /* UnitConvo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9717962255DC900001301B6 /* Project object */ = {
+		E93749FF25BCC687000F3077 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					E9717969255DC900001301B6 = {
-						CreatedOnToolsVersion = 12.1;
+					E9374A0625BCC687000F3077 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = E9717965255DC900001301B6 /* Build configuration list for PBXProject "2-UnitConvo" */;
+			buildConfigurationList = E9374A0225BCC687000F3077 /* Build configuration list for PBXProject "UnitConvo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = E9717961255DC900001301B6;
-			productRefGroup = E971796B255DC900001301B6 /* Products */;
+			mainGroup = E93749FE25BCC687000F3077;
+			productRefGroup = E9374A0825BCC687000F3077 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9717969255DC900001301B6 /* 2-UnitConvo */,
+				E9374A0625BCC687000F3077 /* UnitConvo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9717968255DC900001301B6 /* Resources */ = {
+		E9374A0525BCC687000F3077 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9717975255DC904001301B6 /* Preview Assets.xcassets in Resources */,
-				E9717972255DC904001301B6 /* Assets.xcassets in Resources */,
+				E9374A1225BCC688000F3077 /* Preview Assets.xcassets in Resources */,
+				E9374A0F25BCC688000F3077 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9717966255DC900001301B6 /* Sources */ = {
+		E9374A0325BCC687000F3077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9717970255DC900001301B6 /* ContentView.swift in Sources */,
-				E971796E255DC900001301B6 /* __UnitConvoApp.swift in Sources */,
+				E9374A0D25BCC687000F3077 /* ContentView.swift in Sources */,
+				E9374A0B25BCC687000F3077 /* UnitConvoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E9717977255DC904001301B6 /* Debug */ = {
+		E9374A1425BCC688000F3077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -197,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		E9717978255DC904001301B6 /* Release */ = {
+		E9374A1525BCC688000F3077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,42 +262,42 @@
 			};
 			name = Release;
 		};
-		E971797A255DC904001301B6 /* Debug */ = {
+		E9374A1725BCC688000F3077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"2-UnitConvo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UnitConvo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "2-UnitConvo/Info.plist";
+				INFOPLIST_FILE = UnitConvo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sonjaek.--UnitConvo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonjaek.UnitConvo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E971797B255DC904001301B6 /* Release */ = {
+		E9374A1825BCC688000F3077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"2-UnitConvo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UnitConvo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "2-UnitConvo/Info.plist";
+				INFOPLIST_FILE = UnitConvo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sonjaek.--UnitConvo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonjaek.UnitConvo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9717965255DC900001301B6 /* Build configuration list for PBXProject "2-UnitConvo" */ = {
+		E9374A0225BCC687000F3077 /* Build configuration list for PBXProject "UnitConvo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9717977255DC904001301B6 /* Debug */,
-				E9717978255DC904001301B6 /* Release */,
+				E9374A1425BCC688000F3077 /* Debug */,
+				E9374A1525BCC688000F3077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9717979255DC904001301B6 /* Build configuration list for PBXNativeTarget "2-UnitConvo" */ = {
+		E9374A1625BCC688000F3077 /* Build configuration list for PBXNativeTarget "UnitConvo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E971797A255DC904001301B6 /* Debug */,
-				E971797B255DC904001301B6 /* Release */,
+				E9374A1725BCC688000F3077 /* Debug */,
+				E9374A1825BCC688000F3077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9717962255DC900001301B6 /* Project object */;
+	rootObject = E93749FF25BCC687000F3077 /* Project object */;
 }
