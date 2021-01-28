@@ -4,6 +4,10 @@
 //
 //  Created by Sonja Ek on 23.10.2020.
 //
+// TODO: two remaining tasks for challenge day 34
+// - Make the other two buttons fade out to 25% opacity.
+// - And if you tap on the wrong flag? Well, that’s down to you – get creative!
+
 
 import SwiftUI
 
