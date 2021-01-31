@@ -33,8 +33,8 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     
-    @State private var animationAmount = 0.0
-    @State private var opacityAmount = 1.0
+    @State private var animationAmount = 0.0  // For button rotation in case of correct answer
+    @State private var opacityAmount = 1.0 // For decreasing button's opacity in case of wrong answer
     
     var body: some View {
         ZStack {
@@ -58,8 +58,11 @@ struct ContentView: View {
                     }) {
                         FlagImage(image: (self.countries[number]))
                     }
-                    .rotation3DEffect(.degrees(number == self.correctAnswer ? self.animationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                    .rotation3DEffect(.degrees(number == self.correctAnswer ? self.animationAmount :
+                                                0), axis: (x: 0, y: 1, z: 0))
+                    // For button rotation in case of correct answer
                     .opacity(number == self.correctAnswer ? 1 : self.opacityAmount)
+                    // For decreasing button's opacity in case of wrong answer
                 }
                 
                 Text("Current score: \(score)")
@@ -86,7 +89,7 @@ struct ContentView: View {
             self.animationAmount += 0.0
             
             withAnimation(.interpolatingSpring(stiffness: 20, damping: 5)) {
-                self.animationAmount = 360
+                self.animationAmount = 360  // For button rotation in case of correct answer
             }
         } else {
             scoreTitle = "Wrong! That is the flag of \(countries[number])."
@@ -103,7 +106,7 @@ struct ContentView: View {
         correctAnswer = Int.random(in: 0...2)
         self.animationAmount = 0.0
         withAnimation(.easeInOut) {
-            self.opacityAmount = 1.0
+            self.opacityAmount = 1.0 // For decreasing button's opacity in case of wrong answer
         }
 
     }
