@@ -48,7 +48,16 @@ struct ContentView: View {
             List {
                 // id can be left out from the parameters because the Identifiable protocol guarantees there's an id:
                 ForEach(expenses.items) { item in
-                    Text(item.name)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+
+                        Spacer()
+                        Text("\(item.amount)€")
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
