@@ -1,9 +1,4 @@
 # 100 Days of SwiftUI
----
-```
-This course will be on hiatus until May 2021
-```
----
 
 ### The repository contains my solutions to Paul Hudson's 100 Days of SwiftUI challenge. The challenge is to make small iOS apps built using Apple's SwiftUI framework.
 #### Homepage: https://www.hackingwithswift.com/100/swiftui
