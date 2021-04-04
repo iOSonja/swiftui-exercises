@@ -2,6 +2,20 @@
 
 ### The repository contains my solutions to Paul Hudson's 100 Days of SwiftUI challenge. The challenge is to make small iOS apps built using Apple's SwiftUI framework.
 #### Homepage: https://www.hackingwithswift.com/100/swiftui
+---
+
+## Progress Tracking
+
+#### Built from Scratch
+| Own Project | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+|-------------|-----|-----|-----|-----|-----|-----|-----|
+| Parts Done  | 1/2 | 1/2 | 0/2 | 0/2 | 0/2 | 0/2 | 0/2 |
+
+#### Tutorial-based Projects
+| Tutorial Project | 0     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  |
+|------------------|-------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Days Completed   | 15/15 | 3/3 | 3/3 | 2/2 | 3/3 | 3/3 | 3/3 | 2/3 | 0/4 | 0/9 | 0/4 | 0/4 | 0/3 | 0/6 | 0/6 | 0/3 | 0/7 | 0/6 | 0/3 | 0/4 |
+---
 
 The "Tutorial-based Exercises" folder contains apps that are built on top of tutorials and only slightly modified by me. The "Built From Scratch" folder only contains projects that are made by me from start to finish.
 
