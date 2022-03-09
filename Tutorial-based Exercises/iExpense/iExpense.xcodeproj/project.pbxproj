@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAACED3A27D7952A00073174 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACED3927D7952A00073174 /* ExpenseItem.swift */; };
+		BAACED3C27D7957000073174 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACED3B27D7957000073174 /* Expenses.swift */; };
 		E939DBA625C71D1F001CD5E8 /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939DBA525C71D1F001CD5E8 /* iExpenseApp.swift */; };
 		E939DBA825C71D1F001CD5E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939DBA725C71D1F001CD5E8 /* ContentView.swift */; };
 		E939DBAA25C71D20001CD5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E939DBA925C71D20001CD5E8 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAACED3927D7952A00073174 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		BAACED3B27D7957000073174 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		E939DBA225C71D1F001CD5E8 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E939DBA525C71D1F001CD5E8 /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
 		E939DBA725C71D1F001CD5E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				E939DBA525C71D1F001CD5E8 /* iExpenseApp.swift */,
 				E939DBA725C71D1F001CD5E8 /* ContentView.swift */,
+				BAACED3B27D7957000073174 /* Expenses.swift */,
+				BAACED3927D7952A00073174 /* ExpenseItem.swift */,
 				E99B26B625C82C6C0072F5D4 /* AddView.swift */,
 				E939DBA925C71D20001CD5E8 /* Assets.xcassets */,
 				E939DBAE25C71D20001CD5E8 /* Info.plist */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAACED3C27D7957000073174 /* Expenses.swift in Sources */,
 				E939DBA825C71D1F001CD5E8 /* ContentView.swift in Sources */,
 				E939DBA625C71D1F001CD5E8 /* iExpenseApp.swift in Sources */,
 				E99B26B725C82C6C0072F5D4 /* AddView.swift in Sources */,
+				BAACED3A27D7952A00073174 /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +283,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iExpense/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iExpense/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
