@@ -7,10 +7,10 @@
 
 ## Progress Tracking
 
-#### Checkpoint Exercises (not in the repository)
+#### Checkpoint Exercises
 | Checkpoint | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |------------|---|---|---|---|---|---|---|---|---|
-| Done       | x | - | - | - | - | - | - | - | - |
+| Done       | x | x | x | x | - | - | - | - | - |
 
 #### Built from Scratch
 | Own Project | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
