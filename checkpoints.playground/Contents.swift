@@ -98,3 +98,80 @@ fiesta.changeGears(by: 2)
 print("Current gear: \(fiesta.currentGear)")
 
 print()
+
+// Checkpoint 7
+class Animal {
+    var legs: Int
+    
+    init(legs: Int) {
+        self.legs = legs
+    }
+    
+    func speak() {
+        print("EEEEERRRRR")
+    }
+}
+
+class Dog: Animal {
+    init() {
+        super.init(legs: 4)
+    }
+    
+    override func speak() {
+        print("Woof!")
+    }
+}
+
+class Cat: Animal {
+    var isTame: Bool
+    
+    init(isTame: Bool) {
+        self.isTame = isTame
+        super.init(legs: 4)
+    }
+    
+    override func speak() {
+        print("Meow!")
+    }
+}
+
+class Corgi: Dog {
+    override func speak() {
+        print("Wwworf")
+    }
+}
+
+class Poodle: Dog {
+    override func speak() {
+        print("Howwwow")
+    }
+}
+
+class Persian: Cat {
+    override func speak() {
+        print("Purrrr")
+    }
+}
+
+class Lion: Cat {
+    override func speak() {
+        print("Growwwwwwwwl")
+    }
+}
+
+let sara = Poodle()
+let massi = Persian(isTame: true)
+let liz = Corgi()
+let harry = Lion(isTame: false)
+let henkka = Cat(isTame: false)
+let tico = Animal(legs: 6)
+
+sara.speak()
+massi.speak()
+liz.speak()
+harry.speak()
+henkka.speak()
+tico.speak()
+
+print(sara.legs)
+print(tico.legs)
