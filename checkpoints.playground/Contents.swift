@@ -175,3 +175,45 @@ tico.speak()
 
 print(sara.legs)
 print(tico.legs)
+print()
+
+// Checkpoint 8
+protocol Building {
+    var rooms: Int { get }
+    var cost: Int { get set }
+    var agent: String { get set }
+}
+
+extension Building {
+    func printSummary() {
+        print("This building has \(rooms) rooms and it costs \(cost) euros. Contact \(agent) for more detailed information.")
+    }
+}
+
+struct House: Building {
+    let rooms: Int
+    var cost: Int
+    var agent: String
+}
+
+struct Office: Building {
+    let rooms: Int
+    var cost: Int
+    var agent: String
+
+    func printSummary() {
+        print("This office building has \(rooms) rooms and it costs \(cost) euros. Contact \(agent) for more detailed information.")
+    }
+}
+
+var sanomatalo = Office(rooms: 150, cost: 2_000_000, agent: "Sonja Ek")
+sanomatalo.printSummary()
+sanomatalo.cost = 1_900_000
+sanomatalo.printSummary()
+
+var lintukoto = House(rooms: 2, cost: 450_000, agent: "Sofia Ek")
+lintukoto.printSummary()
+lintukoto.agent = "Ingrid Ek"
+lintukoto.printSummary()
+
+print()
