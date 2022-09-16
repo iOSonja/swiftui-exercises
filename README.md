@@ -30,26 +30,26 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 
 ### Summary of apps I've built so far
 
-#### Project 1: WeSplit (tutorial-based)
+#### Project 1: WeSplit
 - An app that calculates how to split a restaurant bill
 
-#### Challenge 1: Temperature Converter (built from Scratch)
+#### Challenge 1: Temperature Converter
 - An app that converts temperatures between Celsius, Fahrenheit and Kelvin
 
-#### Project 2: Guess the Flag (tutorial-based)
+#### Project 2: Guess the Flag
 - A game that shows some random flags to users and asks them to choose which one belongs to a particular country
 
-#### Project 3: Views and Modifiers (tutorial-based)
+#### Project 3: Views and Modifiers
 - Just some playing around with views and modifiers
 
-#### Challenge 2: Rock Paper Scissors (built from scratch, unfinished)
+#### Challenge 2: Rock Paper Scissors
 - A game that simulates the traditional Rock Paper Scissors with a twist
 
-#### Project 4: BetterRest (tutorial-based)
+#### Project 4: BetterRest
 - Core ML -powered app that calculates when it's still okay to drink coffee based on a wished sleep time
 
-#### Project 5: Word Scramble (tutorial-based)
+#### Project 5: Word Scramble
 - A word game that deals with anagrams
 
-#### Project 6: Animations (tutorial-based)
+#### Project 6: Animations
 - Playing with implicit, explicit and binding animations
