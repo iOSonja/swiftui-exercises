@@ -17,9 +17,11 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 | Done   | x | x | x | x | x | x | x | x | x |
 
 #### Projects
-| Number     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  |
-|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Parts Done | 3/3 | 3/3 | 2/2 | 3/3 | 3/3 | 3/3 | 2/3 | 0/4 | 0/9 | 0/4 | 0/4 | 0/3 | 0/6 | 0/6 | 0/3 | 0/7 | 0/6 | 0/3 | 0/4 |
+| Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
+|--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Done   | x | o | o | o | o | o | o | - | - | - | - | - | - | - | - | - | - | - | - |
+
+_Note: "o" means I've only completed the project in 2020-2021 when doing the course for the first time_
 
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -37,7 +39,7 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 - An app that converts temperatures between Celsius, Fahrenheit and Kelvin
 
 #### Project 2: Guess the Flag
-- A game that shows some random flags to users and asks them to choose which one belongs to a particular country
+- A game that shows random flags and asks the player to recognize the country it represents
 
 #### Project 3: Views and Modifiers
 - Just some playing around with views and modifiers
