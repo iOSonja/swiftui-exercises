@@ -19,7 +19,7 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 #### Projects
 | Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Done   | x | x | o | o | o | o | o | - | - | - | - | - | - | - | - | - | - | - | - |
+| Done   | x | x | x | o | o | o | o | - | - | - | - | - | - | - | - | - | - | - | - |
 
 _Note: "o" means I've only completed the project in 2020-2021 when doing the course for the first time_
 
@@ -30,7 +30,7 @@ _Note: "o" means I've only completed the project in 2020-2021 when doing the cou
 
 ---
 
-### Summary of apps I've built so far
+### Apps I've built so far
 
 #### Project 1: WeSplit
 - An app that calculates how to split a restaurant bill
@@ -40,9 +40,6 @@ _Note: "o" means I've only completed the project in 2020-2021 when doing the cou
 
 #### Project 2: Guess the Flag
 - A game that shows random flags and asks the player to recognize the country it represents
-
-#### Project 3: Views and Modifiers
-- Just some playing around with views and modifiers
 
 #### Challenge 2: Rock Paper Scissors
 - A game that simulates the traditional Rock Paper Scissors with a twist
