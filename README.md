@@ -19,7 +19,7 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 #### Projects
 | Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Done   | x | o | o | o | o | o | o | - | - | - | - | - | - | - | - | - | - | - | - |
+| Done   | x | x | o | o | o | o | o | - | - | - | - | - | - | - | - | - | - | - | - |
 
 _Note: "o" means I've only completed the project in 2020-2021 when doing the course for the first time_
 
