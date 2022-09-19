@@ -26,7 +26,7 @@ _Note: "o" means I've only completed the project in 2020-2021 when doing the cou
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |---------|---|---|---|---|---|---|---|
-| Done    | x | - | - | - | - | - | - |
+| Done    | x | x | - | - | - | - | - |
 
 ---
 
