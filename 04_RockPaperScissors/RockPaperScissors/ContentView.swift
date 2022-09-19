@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var moves = ["rock", "paper", "scissors"]
+    @State private var moveEmojis = ["rock": "🪨", "paper": "🧻", "scissors": "✂️"]
     @State private var currentChoice = "rock"
     @State private var shouldWin = Bool.random()
     @State private var score = 0
@@ -24,17 +25,20 @@ struct ContentView: View {
 
             Spacer()
 
-            ForEach(moves, id: \.self) { move in
-                Button(move.uppercased()) {
-                    evaluateSuccess(move: move)
+            HStack {
+                ForEach(moves, id: \.self) { move in
+                    Button(moveEmojis[move] ?? "❓") {
+                        evaluateSuccess(move: move)
+                    }
+                    .padding()
+                    .font(.system(size: 70))
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .clipShape(Capsule())
                 }
-                .padding()
-                .font(.largeTitle)
-                .background(.blue)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
             }
 
+            Spacer()
             Spacer()
 
             Text("Score: \(score)")
