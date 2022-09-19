@@ -17,39 +17,43 @@ struct ContentView: View {
     @State private var gameOver = false
     
     var body: some View {
-        VStack {
-            Spacer()
+        ZStack {
+            LinearGradient(colors: [.blue, .white, .blue], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
 
-            Text("Try to \(shouldWin ? "win" : "lose") this time!")
-                .font(.title)
+            VStack {
+                Spacer()
 
-            Spacer()
+                Text("Try to \(shouldWin ? "win" : "lose") this time!")
+                    .font(.title)
 
-            HStack {
-                ForEach(moves, id: \.self) { move in
-                    Button(moveEmojis[move] ?? "❓") {
-                        evaluateSuccess(move: move)
+                Spacer()
+
+                HStack {
+                    ForEach(moves, id: \.self) { move in
+                        Button(moveEmojis[move] ?? "❓") {
+                            evaluateSuccess(move: move)
+                        }
+                        .padding()
+                        .font(.system(size: 70))
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .clipShape(Capsule())
                     }
-                    .padding()
-                    .font(.system(size: 70))
-                    .background(.blue)
-                    .foregroundColor(.white)
-                    .clipShape(Capsule())
                 }
+
+                Spacer()
+
+                Text("Score: \(score)")
+                    .font(.title)
+
+                Spacer()
             }
-
-            Spacer()
-            Spacer()
-
-            Text("Score: \(score)")
-                .font(.title)
-
-            Spacer()
-        }
-        .alert("Game over", isPresented: $gameOver) {
-            Button("Play again", action: reset)
-        } message: {
+            .alert("Game over", isPresented: $gameOver) {
+                Button("Play again", action: reset)
+            } message: {
                 Text("Your final score is \(score)")
+            }
         }
     }
 
