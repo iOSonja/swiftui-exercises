@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var wakeUp = defaultWakeTime
     @State private var sleepAmount = 8.0
-    @State private var coffeeAmount = 1
+    @State private var coffeeAmount = 0
 
     @State private var alertTitle = ""
     @State private var alertMessage = ""
@@ -43,7 +43,12 @@ struct ContentView: View {
                 }
 
                 Section {
-                    Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
+                    Picker("Daily coffee intake", selection: $coffeeAmount) {
+                        ForEach(1..<21) {
+                            Text($0 == 1 ? "1 cup" : "\($0) cups")
+                        }
+                    }
+                    .pickerStyle(.wheel).frame(height: 100)
                 } header: {
                     Text("Daily coffee intake")
                         .font(.headline)
