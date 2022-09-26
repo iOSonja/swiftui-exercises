@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var score = 0
 
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -31,6 +32,16 @@ struct ContentView: View {
                             Text(word)
                         }
                     }
+                }
+
+                Spacer()
+                    .listRowBackground(Color(UIColor.systemGroupedBackground))
+
+                Section {
+                    Text("Score: \(score)")
+                        .font(.largeTitle)
+                        .listRowBackground(Color(UIColor.systemGroupedBackground))
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
             }
             .navigationTitle(rootWord)
@@ -80,6 +91,7 @@ struct ContentView: View {
             usedWords.insert(answer, at: 0)
         }
 
+        score += newWord.count
         newWord = ""
     }
 
