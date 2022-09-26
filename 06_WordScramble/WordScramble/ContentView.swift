@@ -46,7 +46,6 @@ struct ContentView: View {
 
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-
         guard answer.count > 0 else { return }
 
         guard isOriginal(word: answer) else {
@@ -55,7 +54,7 @@ struct ContentView: View {
         }
 
         guard isPossible(word: answer) else {
-            wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'")
+            wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
             return
         }
 
@@ -64,9 +63,10 @@ struct ContentView: View {
             return
         }
 
-        withAnimation{
+        withAnimation {
             usedWords.insert(answer, at: 0)
         }
+
         newWord = ""
     }
 
@@ -79,7 +79,7 @@ struct ContentView: View {
             }
         }
 
-        fatalError("Could mot load start.txt from bundle.")
+        fatalError("Could not load start.txt from bundle.")
     }
 
     func isOriginal(word: String) -> Bool {
