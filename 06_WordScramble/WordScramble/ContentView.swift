@@ -48,6 +48,16 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         guard answer.count > 0 else { return }
 
+        guard answer.count > 1 else {
+            wordError(title: "That's a letter", message: "Words that short don't count as words here.")
+            return
+        }
+
+        guard answer.count < rootWord.count else {
+            wordError(title: "Not a new word", message: "Word is the same as the original!")
+            return
+        }
+
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original!")
             return
