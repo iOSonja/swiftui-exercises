@@ -30,25 +30,26 @@ _Note: "o" means I've only completed the project in 2020-2021 when doing the cou
 
 ---
 
-### Apps I've built so far
+### Finished Projects
+_Some of the projects didn't aim to result in an app. The ones that did are listed here and included in the repository._
 
-#### Project 1: WeSplit
+#### WeSplit
 - An app that calculates how to split a restaurant bill
 
-#### Challenge 1: Temperature Converter
-- An app that converts temperatures between Celsius, Fahrenheit and Kelvin
-
-#### Project 2: Guess the Flag
+#### Guess the Flag
 - A game that shows random flags and asks the player to recognize the country it represents
 
-#### Challenge 2: Rock Paper Scissors
-- A game that simulates the traditional Rock Paper Scissors with a twist
-
-#### Project 4: BetterRest
+#### BetterRest
 - Core ML -powered app that calculates when it's still okay to drink coffee based on a wished sleep time
 
-#### Project 5: Word Scramble
+#### Word Scramble
 - A word game that deals with anagrams
 
-#### Project 6: Animations
-- Playing with implicit, explicit and binding animations
+
+### Finished Challenges
+
+#### Temperature Converter
+- An app that converts temperatures between Celsius, Fahrenheit and Kelvin
+
+#### Rock Paper Scissors
+- A game that simulates the traditional Rock Paper Scissors with a twist
