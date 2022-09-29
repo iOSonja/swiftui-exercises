@@ -24,11 +24,13 @@ extension View {
 struct ContentView: View {
     @State private var score = 0
     @State private var showingScore = false
+    @State private var selectedFlag: Int?
     @State private var scoreTitle = ""
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var questionsAsked = 0
     @State private var gameOver = false
+    @State private var animationAmount = 0.0
 
     struct FlagImage: View {
         var country: String
@@ -69,6 +71,7 @@ struct ContentView: View {
                         } label: {
                             FlagImage(country: countries[number])
                         }
+                        .rotation3DEffect(.degrees(selectedFlag == number ? animationAmount : 0), axis: (x: 0, y: 1, z: 0))
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -100,6 +103,12 @@ struct ContentView: View {
     }
 
     func flagTapped(_ number: Int) {
+        selectedFlag = number
+
+        withAnimation {
+            animationAmount += 360
+        }
+
         if number == correctAnswer {
             score += 1
             scoreTitle = "Correct"
