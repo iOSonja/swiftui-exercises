@@ -131,6 +131,7 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        animationAmount = 0.0
         withAnimation(.easeInOut) {
             opacityAmount = 1.0
         }
