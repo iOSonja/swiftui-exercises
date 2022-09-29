@@ -31,6 +31,7 @@ struct ContentView: View {
     @State private var questionsAsked = 0
     @State private var gameOver = false
     @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
 
     struct FlagImage: View {
         var country: String
@@ -72,6 +73,7 @@ struct ContentView: View {
                             FlagImage(country: countries[number])
                         }
                         .rotation3DEffect(.degrees(selectedFlag == number ? animationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(selectedFlag == number ? 1 : opacityAmount)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -107,6 +109,7 @@ struct ContentView: View {
 
         withAnimation {
             animationAmount += 360
+            opacityAmount = 0.25 * opacityAmount
         }
 
         if number == correctAnswer {
@@ -128,6 +131,9 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        withAnimation(.easeInOut) {
+            opacityAmount = 1.0
+        }
     }
 
     func reset() {
