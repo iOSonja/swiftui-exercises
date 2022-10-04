@@ -26,7 +26,7 @@ _Note: "o" means I've only completed the project in 2020-2021 when doing the cou
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |---------|---|---|---|---|---|---|---|
-| Done    | x | x | - | - | - | - | - |
+| Done    | x | x | x | - | - | - | - |
 
 ---
 
@@ -53,3 +53,6 @@ _Some of the projects didn't aim to result in an app. The ones that did are list
 
 #### Rock Paper Scissors
 - A game that simulates the traditional Rock Paper Scissors with a twist
+
+### TimesTable
+- Quiz game for learning the multiplication table
