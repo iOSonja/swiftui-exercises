@@ -19,9 +19,7 @@ _Note: Some of the apps are currently not visible as I'm redoing the course afte
 #### Projects
 | Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Done   | x | x | x | x | x | x | o | - | - | - | - | - | - | - | - | - | - | - | - |
-
-_Note: "o" means I've only completed the project in 2020-2021 when doing the course for the first time_
+| Done   | x | x | x | x | x | x | x | - | - | - | - | - | - | - | - | - | - | - | - |
 
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -44,6 +42,9 @@ _Some of the projects didn't aim to result in an app. The ones that did are list
 
 #### Word Scramble
 - A word game that deals with anagrams
+
+#### iExpense
+- Expense tracking app; the first project with multiple views
 
 
 ### Finished Challenges
