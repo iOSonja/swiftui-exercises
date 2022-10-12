@@ -9,26 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var expenses = Expenses()
+    @State private var currentType = "Business"
     @State private var showingAddExpense = false
+
+    let types = ["Business", "Personal"]
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
-                        }
-
-                        Spacer()
-                        Text(item.amount, format: .currency(code: item.currency))
+                Picker("Type of expense", selection: $currentType) {
+                    ForEach(types, id: \.self) {
+                        Text($0)
                     }
-                    .padding(5)
-                    .background(item.amount < 10 ? .mint : .yellow)
-                    .foregroundColor(item.amount < 100 ? .primary : .red)
-                    .cornerRadius(5)
+                }
+                .pickerStyle(.segmented)
+
+                ForEach(expenses.items.filter { $0.type == currentType }) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+
+                            Spacer()
+                            Text(item.amount, format: .currency(code: item.currency))
+                        }
+                        .padding(5)
+                        .background(item.amount < 10 ? .mint : .yellow)
+                        .foregroundColor(item.amount < 100 ? .primary : .red)
+                        .cornerRadius(5)
                 }
                 .onDelete(perform: removeItems)
             }
