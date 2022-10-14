@@ -7,8 +7,6 @@ The course consists of three different types of exercises:
 - Projects – SwiftUI apps that are combinations of tutorial-based MVP:s and improvements made by me
 - Challenges – Apps I've build from scratch
 
-_Note: Some of the apps are currently not visible as I'm redoing the course after 1,5 years of hiatus and have moved old app versions elsewhere._
-
 ## Progress Tracking
 
 #### Checkpoints
@@ -46,6 +44,9 @@ _Some of the projects didn't aim to result in an app. The ones that did are list
 #### iExpense
 - Expense tracking app; the first project with multiple views
 
+#### Moonshot
+- Info bank for NASA's Apollo space program
+
 
 ### Finished Challenges
 
@@ -55,5 +56,5 @@ _Some of the projects didn't aim to result in an app. The ones that did are list
 #### Rock Paper Scissors
 - A game that simulates the traditional Rock Paper Scissors with a twist
 
-### TimesTable
+#### TimesTable
 - Quiz game for learning the multiplication table
