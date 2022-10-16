@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+struct Divider: View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 2)
+            .foregroundColor(.lightBackground)
+            .padding(.vertical)
+    }
+}
+
 struct CrewView: View {
     let crew: [CrewMember]
 
@@ -62,10 +71,7 @@ struct MissionView: View {
                         .font(.headline)
 
                     VStack(alignment: .leading) {
-                        Rectangle()
-                            .frame(height: 2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        Divider()
 
                         Text("Mission Highlights")
                             .font(.title.bold())
@@ -73,10 +79,7 @@ struct MissionView: View {
 
                         Text(mission.description)
 
-                        Rectangle()
-                            .frame(height: 2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        Divider()
 
                         Text("Crew")
                             .font(.title.bold())
