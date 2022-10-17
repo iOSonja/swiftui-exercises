@@ -7,19 +7,6 @@
 
 import SwiftUI
 
-struct Triangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-
-        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX + 15, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.maxX + 45, y: rect.maxY - 15))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-
-        return path
-    }
-}
-
 struct Head: View {
     var body: some View {
             ZStack {
