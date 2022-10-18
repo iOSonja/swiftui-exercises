@@ -12,6 +12,7 @@
 		E91A2F2028FDA57600EF251F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91A2F1F28FDA57600EF251F /* Assets.xcassets */; };
 		E91A2F2328FDA57600EF251F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91A2F2228FDA57600EF251F /* Preview Assets.xcassets */; };
 		E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2B28FDA5B900EF251F /* Snowman.swift */; };
+		E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2D28FF0F2E00EF251F /* Flower.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E91A2F1F28FDA57600EF251F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91A2F2228FDA57600EF251F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E91A2F2B28FDA5B900EF251F /* Snowman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snowman.swift; sourceTree = "<group>"; };
+		E91A2F2D28FF0F2E00EF251F /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E91A2F1B28FDA57500EF251F /* DrawingsApp.swift */,
 				E91A2F1D28FDA57500EF251F /* ContentView.swift */,
+				E91A2F2D28FF0F2E00EF251F /* Flower.swift */,
 				E91A2F2B28FDA5B900EF251F /* Snowman.swift */,
 				E91A2F1F28FDA57600EF251F /* Assets.xcassets */,
 				E91A2F2128FDA57600EF251F /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */,
 				E91A2F1E28FDA57500EF251F /* ContentView.swift in Sources */,
+				E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */,
 				E91A2F1C28FDA57500EF251F /* DrawingsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

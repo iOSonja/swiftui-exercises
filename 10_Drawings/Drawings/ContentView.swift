@@ -19,6 +19,14 @@ struct ContentView: View {
                     }
                     .padding()
                 }
+                NavigationLink {
+                    Flower()
+                } label: {
+                    VStack {
+                        Text("Flower")
+                    }
+                    .padding()
+                }
             }
             .navigationTitle("Drawings")
         }
