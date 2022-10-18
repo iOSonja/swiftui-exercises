@@ -9,23 +9,23 @@ import SwiftUI
 
 struct Head: View {
     var body: some View {
-            ZStack {
-                Circle()
-                    .fill(.white)
-                    .frame(width: 120, height: 120)
-                
-                VStack {
-                    Eyes()
-                    Nose()
-                        .fill(.orange)
-                        .frame(width: 30, height: 30)
-                }
+        ZStack {
+            Circle()
+                .fill(.white)
+                .frame(width: 120, height: 120)
 
-                Mouth(startAngle: .degrees(135), endAngle: .degrees(225), clockwise: true)
-                    .stroke(.black, lineWidth: 3)
-                    .frame(width: 50, height: 50)
-                    .offset(y: 15)
+            VStack {
+                Eyes()
+                Nose()
+                    .fill(.orange)
+                    .frame(width: 30, height: 30)
             }
+
+            Mouth(startAngle: .degrees(135), endAngle: .degrees(225), clockwise: true)
+                .stroke(.black, lineWidth: 3)
+                .frame(width: 50, height: 50)
+                .offset(y: 15)
+        }
     }
 }
 
@@ -34,7 +34,7 @@ struct Eyes: View {
         HStack(spacing: 30) {
             Circle()
                 .frame(width: 15, height: 15)
-            
+
             Circle()
                 .frame(width: 15, height: 15)
         }
@@ -63,7 +63,7 @@ struct Mouth: Shape {
         let rotationAdjustment = Angle.degrees(90)
         let modifiedStart = startAngle - rotationAdjustment
         let modifiedEnd = endAngle - rotationAdjustment
-        
+
         var path = Path()
         path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: !clockwise)
 
@@ -78,9 +78,13 @@ struct Core: View {
                 .fill(.white)
                 .frame(width: 200, height: 200)
 
-            HStack(spacing: 160) {
-                Arm(rotation: 20)
-                Arm(rotation: -20)
+            VStack {
+                HStack(spacing: 140) {
+                    Arm(rotation: 20)
+                    Arm(rotation: -20)
+                }
+
+                Buttons()
             }
         }
     }
@@ -88,13 +92,23 @@ struct Core: View {
 
 struct Arm: View {
     let rotation: Double
-    
+
     var body: some View {
         Rectangle()
             .fill(.black)
             .frame(width: 100, height: 3)
-            .offset(x: 0, y: -40)
+            .offset(x: 0, y: 0)
             .rotationEffect(Angle(degrees: rotation))
+    }
+}
+
+struct Buttons: View {
+    var body: some View {
+        ForEach(1..<6) { _ in
+            Circle()
+                .strokeBorder(style: StrokeStyle(lineWidth: 2))
+                .frame(width: 12, height: 12)
+        }
     }
 }
 
