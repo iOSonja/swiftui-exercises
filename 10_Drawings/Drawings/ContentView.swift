@@ -27,6 +27,14 @@ struct ContentView: View {
                     }
                     .padding()
                 }
+                NavigationLink {
+                    ImageFrame()
+                } label: {
+                    VStack {
+                        Text("Image Frame")
+                    }
+                    .padding()
+                }
             }
             .navigationTitle("Drawings")
         }
