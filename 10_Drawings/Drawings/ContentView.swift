@@ -44,6 +44,15 @@ struct ContentView: View {
                     }
                     .padding()
                 }
+                
+                NavigationLink {
+                    Blur()
+                } label: {
+                    VStack {
+                        Text("Blur")
+                    }
+                    .padding()
+                }
             }
             .navigationTitle("Drawings")
         }
