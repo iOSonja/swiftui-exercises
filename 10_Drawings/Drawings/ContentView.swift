@@ -35,6 +35,15 @@ struct ContentView: View {
                     }
                     .padding()
                 }
+                
+                NavigationLink {
+                    ColorCyclingCircle()
+                } label: {
+                    VStack {
+                        Text("Color Cycling Circle")
+                    }
+                    .padding()
+                }
             }
             .navigationTitle("Drawings")
         }

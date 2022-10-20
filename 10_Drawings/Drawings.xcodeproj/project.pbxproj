@@ -14,6 +14,7 @@
 		E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2B28FDA5B900EF251F /* Snowman.swift */; };
 		E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2D28FF0F2E00EF251F /* Flower.swift */; };
 		E91A2F3028FF151A00EF251F /* ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2F28FF151A00EF251F /* ImageFrame.swift */; };
+		E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266722901AA3F00744676 /* ColorCyclingCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E91A2F2B28FDA5B900EF251F /* Snowman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snowman.swift; sourceTree = "<group>"; };
 		E91A2F2D28FF0F2E00EF251F /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		E91A2F2F28FF151A00EF251F /* ImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
+		E96266722901AA3F00744676 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				E91A2F1B28FDA57500EF251F /* DrawingsApp.swift */,
 				E91A2F1D28FDA57500EF251F /* ContentView.swift */,
+				E96266722901AA3F00744676 /* ColorCyclingCircle.swift */,
 				E91A2F2F28FF151A00EF251F /* ImageFrame.swift */,
 				E91A2F2D28FF0F2E00EF251F /* Flower.swift */,
 				E91A2F2B28FDA5B900EF251F /* Snowman.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */,
+				E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */,
 				E91A2F1E28FDA57500EF251F /* ContentView.swift in Sources */,
 				E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */,
 				E91A2F1C28FDA57500EF251F /* DrawingsApp.swift in Sources */,
