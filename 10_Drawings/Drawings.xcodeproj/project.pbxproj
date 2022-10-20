@@ -16,6 +16,7 @@
 		E91A2F3028FF151A00EF251F /* ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2F28FF151A00EF251F /* ImageFrame.swift */; };
 		E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266722901AA3F00744676 /* ColorCyclingCircle.swift */; };
 		E96266752901B0BC00744676 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266742901B0BC00744676 /* Blur.swift */; };
+		E96266772901B1EC00744676 /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266762901B1EC00744676 /* ColorFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E91A2F2F28FF151A00EF251F /* ImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
 		E96266722901AA3F00744676 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
 		E96266742901B0BC00744676 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		E96266762901B1EC00744676 /* ColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				E91A2F1B28FDA57500EF251F /* DrawingsApp.swift */,
 				E91A2F1D28FDA57500EF251F /* ContentView.swift */,
+				E96266762901B1EC00744676 /* ColorFilter.swift */,
 				E96266742901B0BC00744676 /* Blur.swift */,
 				E96266722901AA3F00744676 /* ColorCyclingCircle.swift */,
 				E91A2F2F28FF151A00EF251F /* ImageFrame.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */,
+				E96266772901B1EC00744676 /* ColorFilter.swift in Sources */,
 				E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */,
 				E91A2F1E28FDA57500EF251F /* ContentView.swift in Sources */,
 				E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */,

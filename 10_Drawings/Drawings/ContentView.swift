@@ -35,7 +35,6 @@ struct ContentView: View {
                     }
                     .padding()
                 }
-                
                 NavigationLink {
                     ColorCyclingCircle()
                 } label: {
@@ -44,12 +43,19 @@ struct ContentView: View {
                     }
                     .padding()
                 }
-                
                 NavigationLink {
                     Blur()
                 } label: {
                     VStack {
                         Text("Blur")
+                    }
+                    .padding()
+                }
+                NavigationLink {
+                    ColorFilter()
+                } label: {
+                    VStack {
+                        Text("Color Filter")
                     }
                     .padding()
                 }
