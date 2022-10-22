@@ -17,7 +17,7 @@ The course consists of three different types of exercises:
 #### Projects
 | Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Done   | x | x | x | x | x | x | x | x | - | - | - | - | - | - | - | - | - | - | - |
+| Done   | x | x | x | x | x | x | x | x | x | - | - | - | - | - | - | - | - | - | - |
 
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -46,6 +46,9 @@ _Some of the projects didn't aim to result in an app. The ones that did are list
 
 #### Moonshot
 - Info bank for NASA's Apollo space program
+
+#### Drawing
+- A collection of views with drawings and special effects
 
 
 ### Finished Challenges
