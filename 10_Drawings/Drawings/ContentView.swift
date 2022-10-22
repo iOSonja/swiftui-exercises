@@ -47,6 +47,12 @@ struct ContentView: View {
                     Text("Color Filter")
                     .padding()
                 }
+                NavigationLink {
+                    OverlappingCircles()
+                } label: {
+                    Text("Overlapping Circles")
+                        .padding()
+                }
             }
             .navigationTitle("Drawings")
         }
