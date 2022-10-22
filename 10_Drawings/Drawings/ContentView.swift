@@ -15,37 +15,37 @@ struct ContentView: View {
                     Snowman()
                 } label: {
                     Text("Snowman")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     Flower()
                 } label: {
                     Text("Flower")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     ImageFrame()
                 } label: {
                     Text("Image Frame")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     ColorCyclingCircle()
                 } label: {
                     Text("Color Cycling Circle")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     Blur()
                 } label: {
                     Text("Blur")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     ColorFilter()
                 } label: {
                     Text("Color Filter")
-                    .padding()
+                        .padding()
                 }
                 NavigationLink {
                     OverlappingCircles()
@@ -63,6 +63,12 @@ struct ContentView: View {
                     AnimatedCheckerboard()
                 } label: {
                     Text("Animated Checkerboard")
+                        .padding()
+                }
+                NavigationLink {
+                    Arrow()
+                } label: {
+                    Text("Arrow")
                         .padding()
                 }
             }
