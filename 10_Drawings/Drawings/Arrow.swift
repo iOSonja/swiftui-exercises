@@ -32,7 +32,7 @@ struct Arrow: View {
                     thickness = CGFloat.random(in: 1...20)
                 }
 
-            VStack(spacing: -47) {
+            VStack(spacing: -50) {
                 Pointer()
                     .stroke(.black, style: StrokeStyle(lineWidth: thickness, lineCap: .round, lineJoin: .round))
                     .frame(width: 50, height: 50)
