@@ -1,20 +1,20 @@
 //
-//  ColorCyclingCircle.swift
+//  ColorCyclingRectangle.swift
 //  Drawings
 //
-//  Created by Sonja Ek on 20.10.2022.
+//  Created by Sonja Ek on 22.10.2022.
 //
 
 import SwiftUI
 
-struct ColorCyclingCircleView: View {
+struct ColorCyclingRectangleView: View {
     var amount = 0.0
     var steps = 100
 
     var body: some View {
         ZStack {
             ForEach(0 ..< steps) { value in
-                Circle()
+                Rectangle()
                     .inset(by: Double(value))
                     .strokeBorder(
                         LinearGradient(
@@ -43,31 +43,21 @@ struct ColorCyclingCircleView: View {
     }
 }
 
-struct ColorCyclingCircle: View {
+struct ColorCyclingRectangle: View {
     @State private var colorCycle = 0.0
 
     var body: some View {
-        NavigationView {
-            VStack {
-                ColorCyclingCircleView(amount: colorCycle)
-                    .frame(width: 300, height: 300)
+        VStack {
+            ColorCyclingRectangleView(amount: colorCycle)
+                .frame(width: 300, height: 300)
 
-                Slider(value: $colorCycle)
-
-                NavigationLink {
-                    ColorCyclingRectangle()
-                } label: {
-                    Text("Switch to Rectangle")
-                        .padding()
-                }
-            }
+            Slider(value: $colorCycle)
         }
     }
 }
 
-
-struct ColorCyclingCircle_Previews: PreviewProvider {
+struct ColorCyclingRectangle_Previews: PreviewProvider {
     static var previews: some View {
-        ColorCyclingCircle()
+        ColorCyclingRectangle()
     }
 }
