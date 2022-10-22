@@ -14,49 +14,37 @@ struct ContentView: View {
                 NavigationLink {
                     Snowman()
                 } label: {
-                    VStack {
-                        Text("Snowman")
-                    }
+                    Text("Snowman")
                     .padding()
                 }
                 NavigationLink {
                     Flower()
                 } label: {
-                    VStack {
-                        Text("Flower")
-                    }
+                    Text("Flower")
                     .padding()
                 }
                 NavigationLink {
                     ImageFrame()
                 } label: {
-                    VStack {
-                        Text("Image Frame")
-                    }
+                    Text("Image Frame")
                     .padding()
                 }
                 NavigationLink {
                     ColorCyclingCircle()
                 } label: {
-                    VStack {
-                        Text("Color Cycling Circle")
-                    }
+                    Text("Color Cycling Circle")
                     .padding()
                 }
                 NavigationLink {
                     Blur()
                 } label: {
-                    VStack {
-                        Text("Blur")
-                    }
+                    Text("Blur")
                     .padding()
                 }
                 NavigationLink {
                     ColorFilter()
                 } label: {
-                    VStack {
-                        Text("Color Filter")
-                    }
+                    Text("Color Filter")
                     .padding()
                 }
             }
