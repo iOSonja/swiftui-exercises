@@ -20,15 +20,27 @@ struct Pointer: Shape {
 }
 
 struct Arrow: View {
+    @State private var thickness: CGFloat = 2
 
     var body: some View {
-        VStack(spacing: -47) {
-            Pointer()
-                .stroke(.black, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
-                .frame(width: 50, height: 50)
-
+        ZStack {
+            // "Empty" space for registering taps around the arrow:
             Rectangle()
-                .frame(width: 2, height: 300)
+                .fill(.white)
+                .frame(width: 400, height: 400)
+                .onTapGesture {
+                    thickness = CGFloat.random(in: 1...20)
+                }
+
+            VStack(spacing: -47) {
+                Pointer()
+                    .stroke(.black, style: StrokeStyle(lineWidth: thickness, lineCap: .round, lineJoin: .round))
+                    .frame(width: 50, height: 50)
+
+                Rectangle()
+                    .fill(.black)
+                    .frame(width: thickness, height: 300)
+            }
         }
     }
 }
