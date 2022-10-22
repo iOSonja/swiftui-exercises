@@ -53,6 +53,12 @@ struct ContentView: View {
                     Text("Overlapping Circles")
                         .padding()
                 }
+                NavigationLink {
+                    AnimatedTrapezoid()
+                } label: {
+                    Text("Animated Trapezoid")
+                        .padding()
+                }
             }
             .navigationTitle("Drawings")
         }

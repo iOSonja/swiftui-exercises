@@ -14,6 +14,7 @@
 		E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2B28FDA5B900EF251F /* Snowman.swift */; };
 		E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2D28FF0F2E00EF251F /* Flower.swift */; };
 		E91A2F3028FF151A00EF251F /* ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A2F2F28FF151A00EF251F /* ImageFrame.swift */; };
+		E94E8D862903C61100E63140 /* AnimatedTrapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E8D852903C61100E63140 /* AnimatedTrapezoid.swift */; };
 		E95E343D2903BCCD00D7A973 /* OverlappingCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E343C2903BCCD00D7A973 /* OverlappingCircles.swift */; };
 		E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266722901AA3F00744676 /* ColorCyclingCircle.swift */; };
 		E96266752901B0BC00744676 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96266742901B0BC00744676 /* Blur.swift */; };
@@ -29,6 +30,7 @@
 		E91A2F2B28FDA5B900EF251F /* Snowman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snowman.swift; sourceTree = "<group>"; };
 		E91A2F2D28FF0F2E00EF251F /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		E91A2F2F28FF151A00EF251F /* ImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
+		E94E8D852903C61100E63140 /* AnimatedTrapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTrapezoid.swift; sourceTree = "<group>"; };
 		E95E343C2903BCCD00D7A973 /* OverlappingCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingCircles.swift; sourceTree = "<group>"; };
 		E96266722901AA3F00744676 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
 		E96266742901B0BC00744676 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				E91A2F1B28FDA57500EF251F /* DrawingsApp.swift */,
 				E91A2F1D28FDA57500EF251F /* ContentView.swift */,
+				E94E8D852903C61100E63140 /* AnimatedTrapezoid.swift */,
 				E95E343C2903BCCD00D7A973 /* OverlappingCircles.swift */,
 				E96266762901B1EC00744676 /* ColorFilter.swift */,
 				E96266742901B0BC00744676 /* Blur.swift */,
@@ -161,6 +164,7 @@
 				E91A2F2C28FDA5B900EF251F /* Snowman.swift in Sources */,
 				E96266772901B1EC00744676 /* ColorFilter.swift in Sources */,
 				E96266732901AA3F00744676 /* ColorCyclingCircle.swift in Sources */,
+				E94E8D862903C61100E63140 /* AnimatedTrapezoid.swift in Sources */,
 				E91A2F1E28FDA57500EF251F /* ContentView.swift in Sources */,
 				E91A2F2E28FF0F2E00EF251F /* Flower.swift in Sources */,
 				E96266752901B0BC00744676 /* Blur.swift in Sources */,
