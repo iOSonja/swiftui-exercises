@@ -29,7 +29,9 @@ struct Arrow: View {
                 .fill(.white)
                 .frame(width: 400, height: 400)
                 .onTapGesture {
-                    thickness = CGFloat.random(in: 1...20)
+                    withAnimation{
+                        thickness = CGFloat.random(in: 1...20)
+                    }
                 }
 
             VStack(spacing: -50) {
