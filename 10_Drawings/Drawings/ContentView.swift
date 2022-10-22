@@ -59,6 +59,12 @@ struct ContentView: View {
                     Text("Animated Trapezoid")
                         .padding()
                 }
+                NavigationLink {
+                    AnimatedCheckerboard()
+                } label: {
+                    Text("Animated Checkerboard")
+                        .padding()
+                }
             }
             .navigationTitle("Drawings")
         }
