@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ViewsAndModifiers
+//  Animations
 //
 //  Created by Sonja Ek on 23.10.2022.
 //
@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink {
+                    ImplicitAnimation()
+                } label: {
+                    Text("Implicit Animation")
+                }
+                .padding()
+            }
         }
-        .padding()
     }
 }
 
