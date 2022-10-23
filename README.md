@@ -22,42 +22,26 @@ The course consists of three different types of exercises:
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |---------|---|---|---|---|---|---|---|
-| Done    | x | x | x | - | - | - | - |
+| Done    | x | x | x | x | - | - | - |
 
 ---
 
 ### Finished Projects
-_Some of the projects didn't aim to result in an app. The ones that did are listed here and included in the repository._
 
-#### WeSplit
-- An app that calculates how to split a restaurant bill
-
-#### Guess the Flag
-- A game that shows random flags and asks the player to recognize the country it represents
-
-#### BetterRest
-- Core ML -powered app that calculates when it's still okay to drink coffee based on a wished sleep time
-
-#### Word Scramble
-- A word game that deals with anagrams
-
-#### iExpense
-- Expense tracking app; the first project with multiple views
-
-#### Moonshot
-- Info bank for NASA's Apollo space program
-
-#### Drawing
-- A collection of views with drawings and special effects
+- WeSplit: An app that calculates how to split a restaurant bill
+- Guess the Flag: A game that shows random flags and asks the player to recognize the country it represents
+- Views and Modifiers: A collection of simple views where e.g. custom modifiers have been used
+- Better Rest: Core ML -powered app that calculates when it's still okay to drink coffee based on a wished sleep time
+- Word Scramble: A word game that deals with anagrams
+- Animations: A collection of views utilizing different animation effects
+- iExpense: Expense tracking app; the first project with multiple views
+- Moonshot: Info bank for NASA's Apollo space program
+- Drawings: A collection of views with drawings and special effects
 
 
 ### Finished Challenges
 
-#### Temperature Converter
-- An app that converts temperatures between Celsius, Fahrenheit and Kelvin
-
-#### Rock Paper Scissors
-- A game that simulates the traditional Rock Paper Scissors with a twist
-
-#### TimesTable
-- Quiz game for learning the multiplication table
+- Temperature Converter: An app that converts temperatures between Celsius, Fahrenheit and Kelvin
+- Rock Paper Scissors: A game that simulates the traditional Rock Paper Scissors with a twist
+- Times Table: Quiz game for learning the multiplication table
+- Habit Tracker: An app for keeping track of how many times an activity has been completed; stores the data in UserDefaults
