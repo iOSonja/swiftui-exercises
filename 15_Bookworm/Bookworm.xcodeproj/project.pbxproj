@@ -16,6 +16,7 @@
 		E92273AB290DA21500038A34 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92273AA290DA21500038A34 /* AddBookView.swift */; };
 		E92273AD290DA6AF00038A34 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92273AC290DA6AF00038A34 /* RatingView.swift */; };
 		E92273AF290DAA6200038A34 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92273AE290DAA6200038A34 /* EmojiRatingView.swift */; };
+		E9E8CC44290E558C00B18738 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8CC43290E558C00B18738 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E92273AA290DA21500038A34 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		E92273AC290DA6AF00038A34 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		E92273AE290DAA6200038A34 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		E9E8CC43290E558C00B18738 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +65,12 @@
 			children = (
 				BA1D14DA290BD8ED00E45C79 /* BookwormApp.swift */,
 				BA1D14DC290BD8ED00E45C79 /* ContentView.swift */,
+				E92273AA290DA21500038A34 /* AddBookView.swift */,
+				E9E8CC43290E558C00B18738 /* DetailView.swift */,
+				E92273AC290DA6AF00038A34 /* RatingView.swift */,
+				E92273AE290DAA6200038A34 /* EmojiRatingView.swift */,
 				BA1D14EB290BDA6A00E45C79 /* DataController.swift */,
 				E92273A7290DA11400038A34 /* Bookworm.xcdatamodeld */,
-				E92273AA290DA21500038A34 /* AddBookView.swift */,
-				E92273AE290DAA6200038A34 /* EmojiRatingView.swift */,
-				E92273AC290DA6AF00038A34 /* RatingView.swift */,
 				BA1D14DE290BD8EF00E45C79 /* Assets.xcassets */,
 				BA1D14E0290BD8EF00E45C79 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1D14DD290BD8ED00E45C79 /* ContentView.swift in Sources */,
+				E9E8CC44290E558C00B18738 /* DetailView.swift in Sources */,
 				E92273A9290DA11400038A34 /* Bookworm.xcdatamodeld in Sources */,
 				E92273AF290DAA6200038A34 /* EmojiRatingView.swift in Sources */,
 				BA1D14EC290BDA6A00E45C79 /* DataController.swift in Sources */,
