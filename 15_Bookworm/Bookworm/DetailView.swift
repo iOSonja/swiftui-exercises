@@ -37,6 +37,9 @@ struct DetailView: View {
                 .font(.title)
                 .foregroundColor(.secondary)
 
+            Text("Review date: \(book.date?.formatted(date: .abbreviated, time: .omitted) ?? "unknown")")
+                .padding()
+
             Text(book.review ?? "No review")
                 .padding()
 
@@ -78,6 +81,7 @@ struct DetailView_Previews: PreviewProvider {
         book.genre = "Fantasy"
         book.rating = 4
         book.review = "This was a great book; I really enjoyed it."
+        book.date = Date.now
 
         return NavigationView {
             DetailView(book: book)
