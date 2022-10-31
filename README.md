@@ -17,7 +17,7 @@ The course consists of three different types of exercises:
 #### Projects
 | Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |--------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Done   | x | x | x | x | x | x | x | x | x | x | - | - | - | - | - | - | - | - | - |
+| Done   | x | x | x | x | x | x | x | x | x | x | x | - | - | - | - | - | - | - | - |
 
 #### Challenges
 | Number  | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -38,6 +38,7 @@ The course consists of three different types of exercises:
 - Moonshot: Info bank for NASA's Apollo space program
 - Drawings: A collection of views with drawings and special effects
 - Cupcake Corner: Ecommerce app for ordering cupcakes
+- Bookworm: Personal app for keeping track of read books and their reviews
 
 
 ### Finished Challenges
