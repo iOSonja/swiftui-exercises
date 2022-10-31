@@ -54,10 +54,19 @@ struct AddBookView: View {
                         dismiss()
                     }
                 }
+                .disabled(validDetails(title: title, author: author) == false)
             }
             .navigationTitle("Add Book")
         }
     }
+}
+
+func validDetails(title: String, author: String) -> Bool {
+    if title.trimmingCharacters(in: .whitespaces).isEmpty ||
+        author.trimmingCharacters(in: .whitespaces).isEmpty {
+        return false
+    }
+    return true
 }
 
 struct AddBookView_Previews: PreviewProvider {
