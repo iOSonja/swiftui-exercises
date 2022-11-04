@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2DDE8D29157D2E0004FC5A /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DDE8C29157D2E0004FC5A /* Predicate.swift */; };
 		E9C54D652910B87C0048A4A7 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C54D642910B87C0048A4A7 /* CoreDataProjectApp.swift */; };
 		E9C54D672910B87C0048A4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C54D662910B87C0048A4A7 /* ContentView.swift */; };
 		E9C54D692910B87D0048A4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C54D682910B87D0048A4A7 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2DDE8C29157D2E0004FC5A /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
 		E9C54D612910B87C0048A4A7 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C54D642910B87C0048A4A7 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		E9C54D662910B87C0048A4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				E9C54D8D2912EBE20048A4A7 /* ShipsView.swift */,
 				E9C54D7F2911749F0048A4A7 /* DynamicFilteringView.swift */,
 				E9C54D81291174F80048A4A7 /* FilteredList.swift */,
+				BA2DDE8C29157D2E0004FC5A /* Predicate.swift */,
 				E9C54D8B2912E9310048A4A7 /* CandyView.swift */,
 				E9C54D832912E67E0048A4A7 /* Country+CoreDataClass.swift */,
 				E9C54D842912E67E0048A4A7 /* Country+CoreDataProperties.swift */,
@@ -188,6 +191,7 @@
 				E9C54D792910BE4C0048A4A7 /* Movie+CoreDataClass.swift in Sources */,
 				E9C54D892912E67E0048A4A7 /* Candy+CoreDataClass.swift in Sources */,
 				E9C54D7E2910CA310048A4A7 /* Singer+CoreDataProperties.swift in Sources */,
+				BA2DDE8D29157D2E0004FC5A /* Predicate.swift in Sources */,
 				E9C54D882912E67E0048A4A7 /* Country+CoreDataProperties.swift in Sources */,
 				E9C54D7A2910BE4C0048A4A7 /* Movie+CoreDataProperties.swift in Sources */,
 				E9C54D8C2912E9310048A4A7 /* CandyView.swift in Sources */,
