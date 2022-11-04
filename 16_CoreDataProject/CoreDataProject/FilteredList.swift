@@ -20,10 +20,10 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
 
-    init(filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+    init(filterKey: String, filterValue: String, predicate: String, @ViewBuilder content: @escaping (T) -> Content) {
         // The underscore is there because we’re not writing to the fetched results object
         // inside our fetch request, but instead writing a wholly new fetch request
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue))
+        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicate) %@", filterKey, filterValue))
         self.content = content
     }
 }
