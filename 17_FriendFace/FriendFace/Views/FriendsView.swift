@@ -1,6 +1,6 @@
 //
 //  FriendsView.swift
-//  FriendFace
+//  Friendface
 //
 //  Created by Sonja Ek on 6.11.2022.
 //
