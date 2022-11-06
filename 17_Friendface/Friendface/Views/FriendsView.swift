@@ -25,22 +25,23 @@ extension View {
 }
 
 struct FriendsView: View {
-    let friends: [Friend]
+    let friends: [CachedFriend]
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(friends) { friend in
-                    Text(friend.name)
+                    Text(friend.wrappedName)
                         .titleStyle()
+                        .padding(3)
                 }
             }
         }
     }
 }
 
-struct FriendsView_Previews: PreviewProvider {
-    static var previews: some View {
-        FriendsView(friends: User.example.friends)
-    }
-}
+// struct FriendsView_Previews: PreviewProvider {
+//     static var previews: some View {
+//         FriendsView(friends: User.example.friends)
+//     }
+// }

@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct DetailView: View {
-    let user: User
+    let user: CachedUser
 
     var body: some View {
         NavigationView {
             VStack {
                 VStack{
-                    Text(user.name)
+                    Text(user.wrappedName)
                         .font(.largeTitle)
-                    Text(user.company)
+                    Text(user.wrappedCompany)
                         .font(.title2)
                 }
                 .padding()
@@ -38,12 +38,12 @@ struct DetailView: View {
                             .fontWeight(.bold)
                             .padding(.top, 5)
                             .padding(.bottom, 5)
-                        Text(user.about)
+                        Text(user.wrappedAbout)
                     }
 
                     HStack {
                         Spacer()
-                        Text("Registered \(user.registered.formatted(date: .abbreviated, time: .omitted))")
+                        Text("Registered \(user.wrappedRegistered.formatted(date: .abbreviated, time: .omitted))")
                             .fontWeight(.thin)
                             .padding()
                     }
@@ -57,7 +57,7 @@ struct DetailView: View {
                     Text("Friends")
                         .fontWeight(.bold)
                         .padding()
-                    FriendsView(friends: user.friends)
+                    FriendsView(friends: user.friendsArray)
                 }
             }
             .frame(maxHeight: .infinity)
@@ -65,8 +65,8 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(user: User.example)
-    }
-}
+// struct DetailView_Previews: PreviewProvider {
+//     static var previews: some View {
+//         DetailView(user: User.example)
+//     }
+// }
