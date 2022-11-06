@@ -22,7 +22,7 @@ The course consists of three different types of exercises:
 #### Challenges
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |---|---|---|---|---|---|---|
-| x | x | x | x | - | - | - |
+| x | x | x | x | x | - | - |
 
 ---
 
@@ -48,3 +48,4 @@ The course consists of three different types of exercises:
 - Rock Paper Scissors: A game that simulates the traditional Rock Paper Scissors with a twist
 - Times Table: Quiz game for learning the multiplication table
 - Habit Tracker: An app for keeping track of how many times an activity has been completed; stores the data in UserDefaults
+- Friendface: A primitive social media app, a people catalogue. The data is fetched from the web and cached using Core Data.
