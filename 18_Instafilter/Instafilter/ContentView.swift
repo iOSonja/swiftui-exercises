@@ -12,8 +12,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
-    @State private var filterRadius = 0.5
-    @State private var filterScale = 0.5
+    @State private var filterRadius = 3.0
+    @State private var filterScale = 5.0
 
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
@@ -55,14 +55,14 @@ struct ContentView: View {
                     if currentFilter.inputKeys.contains(kCIInputRadiusKey) {
                         HStack {
                             Text("Radius")
-                            Slider(value: $filterRadius)
+                            Slider(value: $filterRadius, in: 0...200)
                                 .onChange(of: filterRadius) { _ in applyProcessing() }
                         }
                     }
                     if currentFilter.inputKeys.contains(kCIInputScaleKey) {
                         HStack {
                             Text("Scale")
-                            Slider(value: $filterScale)
+                            Slider(value: $filterScale, in: 0...10)
                                 .onChange(of: filterScale) { _ in applyProcessing() }
                         }
                     }
