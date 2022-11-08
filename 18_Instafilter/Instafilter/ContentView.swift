@@ -23,6 +23,7 @@ struct ContentView: View {
     let context = CIContext()
 
     @State private var showingFilterSheet = false
+    @State private var showingSaveError = false
 
     var body: some View {
         NavigationView {
@@ -104,6 +105,11 @@ struct ContentView: View {
                     Button("Cancel", role: .cancel) { }
                 }
             }
+            .alert("Oops!", isPresented: $showingSaveError) {
+                Button("OK") { }
+            } message: {
+                Text("Sorry, there was an error saving your image – please check that you have allowed permission for this app to save photos.")
+            }
         }
     }
 
@@ -124,8 +130,8 @@ struct ContentView: View {
             print("Success!")
         }
 
-        imageSaver.errorHandler = {
-            print("Oops! \($0.localizedDescription)")
+        imageSaver.errorHandler = { _ in
+            showingSaveError = true
         }
 
         imageSaver.writeToPhotoAlbum(image: processedImage)
