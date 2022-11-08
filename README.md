@@ -17,7 +17,7 @@ The course consists of three different types of exercises:
 #### Projects
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x | x | x | x | x | x | x | x | x | x | x | x | - | - | - | - | - | - | - |
+| x | x | x | x | x | x | x | x | x | x | x | x | x | - | - | - | - | - | - |
 
 #### Challenges
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -40,6 +40,7 @@ The course consists of three different types of exercises:
 - Cupcake Corner: Ecommerce app for ordering cupcakes
 - Bookworm: Personal app for keeping track of read books and their reviews
 - Core Data Project: A collection of exercises for playing with Core Data; not really an app
+- Instafilter: Image filtering app that loads images from a device, processes it using Core Image tools and saves it to device gallery.
 
 
 ### Finished Challenges
