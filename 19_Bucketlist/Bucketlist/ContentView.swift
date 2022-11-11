@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
     @State private var locations = [Location]()
 
+    @State private var selectedPlace: Location?
+
     var body: some View {
         ZStack {
             Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
@@ -25,6 +27,9 @@ struct ContentView: View {
                             .clipShape(Circle())
 
                         Text(location.name)
+                    }
+                    .onTapGesture {
+                        selectedPlace = location
                     }
                 }
             }
@@ -53,6 +58,9 @@ struct ContentView: View {
                     .padding(.trailing)
                 }
             }
+        }
+        .sheet(item: $selectedPlace) { place in
+            Text(place.name)
         }
     }
 }
