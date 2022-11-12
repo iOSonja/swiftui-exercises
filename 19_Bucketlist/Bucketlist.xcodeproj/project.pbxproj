@@ -45,8 +45,6 @@
 		E9E57FE7291D6AAB0075F264 = {
 			isa = PBXGroup;
 			children = (
-				E9524EBA29201955002C7E95 /* FileManager-DocumentsDirectory.swift */,
-				E9524EB6291FFEEF002C7E95 /* Result.swift */,
 				E9E57FF2291D6AAB0075F264 /* Bucketlist */,
 				E9E57FF1291D6AAB0075F264 /* Products */,
 			);
@@ -65,6 +63,8 @@
 			children = (
 				E9E57FF3291D6AAB0075F264 /* BucketlistApp.swift */,
 				E9E57FF5291D6AAB0075F264 /* ContentView.swift */,
+				E9524EBA29201955002C7E95 /* FileManager-DocumentsDirectory.swift */,
+				E9524EB6291FFEEF002C7E95 /* Result.swift */,
 				BAA5FBD5291E2FC6008AC7D5 /* EditView.swift */,
 				E9524EB8292014AC002C7E95 /* ContentView-ViewModel.swift */,
 				BAA5FBD3291E2712008AC7D5 /* Location.swift */,
