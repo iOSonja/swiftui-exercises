@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BAA5FBD4291E2712008AC7D5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5FBD3291E2712008AC7D5 /* Location.swift */; };
 		BAA5FBD6291E2FC6008AC7D5 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5FBD5291E2FC6008AC7D5 /* EditView.swift */; };
+		E9524EB7291FFEEF002C7E95 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9524EB6291FFEEF002C7E95 /* Result.swift */; };
 		E9E57FF4291D6AAB0075F264 /* BucketlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E57FF3291D6AAB0075F264 /* BucketlistApp.swift */; };
 		E9E57FF6291D6AAB0075F264 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E57FF5291D6AAB0075F264 /* ContentView.swift */; };
 		E9E57FF8291D6AAC0075F264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E57FF7291D6AAC0075F264 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		BAA5FBD3291E2712008AC7D5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BAA5FBD5291E2FC6008AC7D5 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		E9524EB6291FFEEF002C7E95 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		E9E57FF0291D6AAB0075F264 /* Bucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E57FF3291D6AAB0075F264 /* BucketlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistApp.swift; sourceTree = "<group>"; };
 		E9E57FF5291D6AAB0075F264 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		E9E57FE7291D6AAB0075F264 = {
 			isa = PBXGroup;
 			children = (
+				E9524EB6291FFEEF002C7E95 /* Result.swift */,
 				E9E57FF2291D6AAB0075F264 /* Bucketlist */,
 				E9E57FF1291D6AAB0075F264 /* Products */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E57FF6291D6AAB0075F264 /* ContentView.swift in Sources */,
+				E9524EB7291FFEEF002C7E95 /* Result.swift in Sources */,
 				BAA5FBD4291E2712008AC7D5 /* Location.swift in Sources */,
 				BAA5FBD6291E2FC6008AC7D5 /* EditView.swift in Sources */,
 				E9E57FF4291D6AAB0075F264 /* BucketlistApp.swift in Sources */,
