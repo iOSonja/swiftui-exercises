@@ -16,6 +16,9 @@ extension ContentView {
         @Published var selectedPlace: Location?
         @Published var isUnlocked = false
 
+        @Published var errorMessage = ""
+        @Published var showingError = false
+
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
 
         init() {
@@ -64,11 +67,13 @@ extension ContentView {
                             self.isUnlocked = true
                         }
                     } else {
-                        // error
+                        self.errorMessage = "Your data couldn't be loaded from memory"
+                        self.showingError = true
                     }
                 }
             } else {
-                // no biometrics
+                self.errorMessage = "We couldn't authenticate you"
+                self.showingError = true
             }
         }
     }

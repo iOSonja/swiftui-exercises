@@ -64,6 +64,11 @@ struct ContentView: View {
                     viewModel.update(location: newLocation)
                 }
             }
+            .alert("Error", isPresented: $viewModel.showingError) {
+                Button("OK") { }
+            } message: {
+                Text(viewModel.errorMessage)
+            }
         } else {
             Button("Unlock Places") {
                 viewModel.authenticate()
