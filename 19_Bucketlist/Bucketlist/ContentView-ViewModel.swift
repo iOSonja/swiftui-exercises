@@ -72,6 +72,7 @@ extension ContentView {
                     }
                 }
             } else {
+                // TODO: Find out why this error is sometimes shown after successful authentication
                 self.errorMessage = "We couldn't authenticate you"
                 self.showingError = true
             }
