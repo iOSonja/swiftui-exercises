@@ -41,6 +41,7 @@ The course consists of three different types of exercises:
 - Bookworm: Personal app for keeping track of read books and their reviews
 - Core Data Project: A collection of exercises for playing with Core Data; not really an app
 - Instafilter: Image filtering app that loads images from a device, processes it using Core Image tools and saves it to device gallery.
+- Bucketlist: An app for storing locations on a map, including their descriptions & nearby attractions fetched from Wikipedia's API.
 
 
 ### Finished Challenges
