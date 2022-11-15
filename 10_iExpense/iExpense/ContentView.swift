@@ -39,6 +39,9 @@ struct ContentView: View {
                         .background(item.amount < 10 ? .mint : .yellow)
                         .foregroundColor(item.amount < 100 ? .primary : .red)
                         .cornerRadius(5)
+                        .accessibilityElement()
+                        .accessibilityLabel("\(item.name), \(item.amount) \(item.currency)")
+                        .accessibilityHint("Type \(item.type)")
                 }
                 .onDelete(perform: removeItems)
             }
