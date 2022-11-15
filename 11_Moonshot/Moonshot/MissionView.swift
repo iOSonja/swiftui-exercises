@@ -57,44 +57,46 @@ struct MissionView: View {
     let crew: [CrewMember]
 
     var body: some View {
-        GeometryReader { geometry in
-            ScrollView {
-                VStack {
-                    Image(mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.6)
-                        .padding(.top)
-                        .padding(.bottom)
+        NavigationView {
+            GeometryReader { geometry in
+                ScrollView {
+                    VStack {
+                        Image(mission.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: geometry.size.width * 0.6)
+                            .padding(.top)
+                            .padding(.bottom)
 
-                    Text("Launch date: \(mission.formattedLaunchDate)")
-                        .font(.headline)
+                        Text("Launch date: \(mission.formattedLaunchDate)")
+                            .font(.headline)
 
-                    VStack(alignment: .leading) {
-                        Divider()
+                        VStack(alignment: .leading) {
+                            Divider()
 
-                        Text("Mission Highlights")
-                            .font(.title.bold())
-                            .padding(.bottom, 5)
+                            Text("Mission Highlights")
+                                .font(.title.bold())
+                                .padding(.bottom, 5)
 
-                        Text(mission.description)
+                            Text(mission.description)
 
-                        Divider()
+                            Divider()
 
-                        Text("Crew")
-                            .font(.title.bold())
-                            .padding(.bottom, 5)
+                            Text("Crew")
+                                .font(.title.bold())
+                                .padding(.bottom, 5)
+                        }
+                        .padding(.horizontal)
+
+                        CrewView(crew: crew)
                     }
-                    .padding(.horizontal)
-
-                    CrewView(crew: crew)
+                    .padding(.bottom)
                 }
-                .padding(.bottom)
             }
+            .navigationTitle(mission.displayName)
+            .navigationBarTitleDisplayMode(.inline)
+            .background(.darkBackground)
         }
-        .navigationTitle(mission.displayName)
-        .navigationBarTitleDisplayMode(.inline)
-        .background(.darkBackground)
     }
 
     init(mission: Mission, astronauts: [String: Astronaut]) {
