@@ -27,6 +27,7 @@ struct GridLayout: View {
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .accessibilityHidden(true)
 
                             VStack {
                                 Text(mission.displayName)
@@ -39,6 +40,9 @@ struct GridLayout: View {
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)
+                            .accessibilityElement()
+                            .accessibilityLabel(mission.displayName)
+                            .accessibilityHint("Launched on \(mission.formattedLaunchDate)")
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .overlay(
@@ -123,6 +127,7 @@ struct ContentView: View {
                     Button(showingGrid ? "List View" : "Grid View") {
                         showingGrid.toggle()
                     }
+                    .accessibilityHidden(true)
                 }
             }
         }

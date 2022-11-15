@@ -35,6 +35,7 @@ struct CrewView: View {
                                     Capsule()
                                         .strokeBorder(.white, lineWidth: 1)
                                 )
+                                .accessibilityHidden(true)
 
                             VStack(alignment: .leading) {
                                 Text(crewMember.astronaut.name)
@@ -43,6 +44,9 @@ struct CrewView: View {
                                 Text(crewMember.role)
                                     .foregroundColor(.secondary)
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel(crewMember.astronaut.name)
+                            .accessibilityHint(crewMember.role)
                         }
                         .padding(.horizontal)
                     }
@@ -67,6 +71,7 @@ struct MissionView: View {
                             .frame(maxWidth: geometry.size.width * 0.6)
                             .padding(.top)
                             .padding(.bottom)
+                            .accessibilityHidden(true)
 
                         Text("Launch date: \(mission.formattedLaunchDate)")
                             .font(.headline)
