@@ -12,6 +12,7 @@
 		E9A645C1292A9222004EA4C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A645C0292A9222004EA4C8 /* Assets.xcassets */; };
 		E9A645C4292A9222004EA4C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A645C3292A9222004EA4C8 /* Preview Assets.xcassets */; };
 		E9A645CB292A9359004EA4C8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645CA292A9359004EA4C8 /* ImagePicker.swift */; };
+		E9A645CD292A9E85004EA4C8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645CC292A9E85004EA4C8 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E9A645C0292A9222004EA4C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A645C3292A9222004EA4C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9A645CA292A9359004EA4C8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E9A645CC292A9E85004EA4C8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E9A645BC292A9221004EA4C8 /* AcquaintancesApp.swift */,
 				E9A645BE292A9221004EA4C8 /* ContentView.swift */,
+				E9A645CC292A9E85004EA4C8 /* AddView.swift */,
 				E9A645CA292A9359004EA4C8 /* ImagePicker.swift */,
 				E9A645C0292A9222004EA4C8 /* Assets.xcassets */,
 				E9A645C2292A9222004EA4C8 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A645CD292A9E85004EA4C8 /* AddView.swift in Sources */,
 				E9A645CB292A9359004EA4C8 /* ImagePicker.swift in Sources */,
 				E9A645BF292A9221004EA4C8 /* ContentView.swift in Sources */,
 				E9A645BD292A9221004EA4C8 /* AcquaintancesApp.swift in Sources */,
