@@ -19,14 +19,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(people.sorted(), id: \.id) { person in
-                HStack {
-                    Text(person.name)
-                    Spacer()
-                    person.image?
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                        .scaledToFill()
-                        .padding()
+                NavigationLink {
+                    DetailView(person: person)
+                } label: {
+                    HStack {
+                        Text(person.name)
+                        Spacer()
+                        person.image?
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .scaledToFill()
+                            .padding()
+                    }
                 }
             }
             .toolbar {
