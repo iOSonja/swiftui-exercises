@@ -18,7 +18,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List(people, id: \.id) { person in
+            List(people.sorted(), id: \.id) { person in
                 HStack {
                     Text(person.name)
                     Spacer()
