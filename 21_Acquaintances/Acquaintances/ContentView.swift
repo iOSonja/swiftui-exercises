@@ -69,7 +69,7 @@ struct ContentView: View {
             let decoder = JSONDecoder()
             let decodedPeople = try decoder.decode([Person].self, from: data)
             people = decodedPeople.sorted()
-            print("success with loadData")
+            print("People were loaded successfully")
         } catch {
             people = []
             print("Unable to load people")
@@ -81,9 +81,3 @@ struct ContentView: View {
         return Image(uiImage: inputImage)
     }
 }
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}

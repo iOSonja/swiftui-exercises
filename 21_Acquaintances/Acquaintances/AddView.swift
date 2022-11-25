@@ -19,7 +19,7 @@ struct SuccessView: View {
 
 struct FailedView: View {
     var body: some View {
-        Text("Failed.")
+        Text("Couldn't load the image")
     }
 }
 
@@ -74,9 +74,9 @@ struct AddView: View {
             if let jpegData = inputImage?.jpegData(compressionQuality: 0.8) {
                 try? jpegData.write(to: FileManager.default.getDocumentsDirectory.appendingPathComponent(person.id.uuidString  + ".jpg"), options: [.atomic, .completeFileProtection])
             }
-            print("great success with saving")
+            print("Person successfully saved")
         } catch {
-            print("Couldn't save person")
+            print("Couldn't save the person")
         }
     }
 }
