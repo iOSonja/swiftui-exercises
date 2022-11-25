@@ -13,6 +13,8 @@
 		E9A645C4292A9222004EA4C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A645C3292A9222004EA4C8 /* Preview Assets.xcassets */; };
 		E9A645CB292A9359004EA4C8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645CA292A9359004EA4C8 /* ImagePicker.swift */; };
 		E9A645CD292A9E85004EA4C8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645CC292A9E85004EA4C8 /* AddView.swift */; };
+		E9A645CF292BEA9A004EA4C8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645CE292BEA9A004EA4C8 /* Person.swift */; };
+		E9A645D1292C0C94004EA4C8 /* FileManager-Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645D0292C0C94004EA4C8 /* FileManager-Document.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E9A645C3292A9222004EA4C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9A645CA292A9359004EA4C8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E9A645CC292A9E85004EA4C8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		E9A645CE292BEA9A004EA4C8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E9A645D0292C0C94004EA4C8 /* FileManager-Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-Document.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 		E9A645B0292A9221004EA4C8 = {
 			isa = PBXGroup;
 			children = (
+				E9A645D0292C0C94004EA4C8 /* FileManager-Document.swift */,
+				E9A645CE292BEA9A004EA4C8 /* Person.swift */,
 				E9A645BB292A9221004EA4C8 /* Acquaintances */,
 				E9A645BA292A9221004EA4C8 /* Products */,
 			);
@@ -143,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A645CF292BEA9A004EA4C8 /* Person.swift in Sources */,
 				E9A645CD292A9E85004EA4C8 /* AddView.swift in Sources */,
 				E9A645CB292A9359004EA4C8 /* ImagePicker.swift in Sources */,
 				E9A645BF292A9221004EA4C8 /* ContentView.swift in Sources */,
+				E9A645D1292C0C94004EA4C8 /* FileManager-Document.swift in Sources */,
 				E9A645BD292A9221004EA4C8 /* AcquaintancesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
