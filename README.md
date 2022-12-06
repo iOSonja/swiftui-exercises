@@ -17,7 +17,7 @@ The course consists of three different types of exercises:
 #### Projects
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | - | - | - | - |
+| x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | - | - | - |
 
 #### Challenges
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -43,6 +43,7 @@ The course consists of three different types of exercises:
 - Instafilter: Image filtering app that loads images from a device, processes it using Core Image tools and saves it to device gallery
 - Bucketlist: An app for storing locations on a map, including their descriptions & nearby attractions fetched from Wikipedia's API
 - Accessibility Project: A tiny collection of views with examples of modifiers adding accessibility improvements
+- Hot Prospects: A social app for scanning people's contacts with a QR code and storing them for later contacting
 
 
 ### Finished Challenges
