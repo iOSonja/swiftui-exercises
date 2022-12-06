@@ -61,12 +61,12 @@
 		BA4EEE092930D9920079466C /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
-				E9384F9329368EFF00B486A5 /* ProspectsView.swift */,
-				E9384F9529368F3200B486A5 /* MeView.swift */,
-				E926E02629393E5800DA80B6 /* ImageSaver.swift */,
 				BA4EEE0A2930D9920079466C /* HotProspectsApp.swift */,
 				BA4EEE0C2930D9920079466C /* ContentView.swift */,
+				E9384F9329368EFF00B486A5 /* ProspectsView.swift */,
+				E9384F9529368F3200B486A5 /* MeView.swift */,
 				E9384F972936933300B486A5 /* Prospect.swift */,
+				E926E02629393E5800DA80B6 /* ImageSaver.swift */,
 				BA4EEE0E2930D9940079466C /* Assets.xcassets */,
 				BA4EEE102930D9940079466C /* Preview Content */,
 			);

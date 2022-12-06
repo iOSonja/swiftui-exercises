@@ -14,8 +14,14 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
 
+    enum SortType {
+        case name, date
+    }
+
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    @State private var isShowingDialog = false
+    @State private var sortOrder = SortType.date
 
     let filter: FilterType
 
@@ -71,15 +77,34 @@ struct ProspectsView: View {
             }
             .navigationTitle(title)
             .toolbar {
-                Button {
-                    isShowingScanner = true
-                } label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingScanner = true
+                    } label: {
+                        Label("Scan", systemImage: "qrcode.viewfinder")
+                    }
+                }
+
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        isShowingDialog = true
+                    } label : {
+                        Label("Sort", systemImage: "person.fill.and.arrow.left.and.arrow.right")
+                    }
                 }
             }
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: handleScan)
             }
+            .confirmationDialog("Choose sorting",
+                isPresented: $isShowingDialog) {
+                Button("Sort by name") {
+                    sortOrder = .name
+                }
+                Button("Sort by most recent") {
+                    sortOrder = .date
+                }
+             }
         }
     }
     
@@ -95,13 +120,21 @@ struct ProspectsView: View {
     }
 
     var filteredProspects: [Prospect] {
+        let result: [Prospect]
+
         switch filter {
         case .none:
-            return prospects.people
+            result = prospects.people
         case .contacted:
-            return prospects.people.filter { $0.isContacted }
+            result = prospects.people.filter { $0.isContacted }
         case .uncontacted:
-            return prospects.people.filter { !$0.isContacted }
+            result = prospects.people.filter { !$0.isContacted }
+        }
+
+        if sortOrder == .name {
+            return result.sorted { $0.name < $1.name }
+        } else {
+            return result.reversed()
         }
     }
 
