@@ -33,6 +33,7 @@ struct AddView: View {
 
     let inputImage: UIImage?
     let url: URL
+    let locationFetcher = LocationFetcher()
 
     enum ImageState {
         case success, failed
@@ -48,6 +49,10 @@ struct AddView: View {
                 }
 
                 TextField("Person's name", text: $name)
+
+                Button("Allow Location") {
+                    self.locationFetcher.start()
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
@@ -63,8 +68,17 @@ struct AddView: View {
     }
 
     func save() {
+        var latitude : Double? = nil
+        var longitude : Double? = nil
+
+        if let location = self.locationFetcher.lastKnownLocation {
+            latitude = location.latitude
+            longitude = location.longitude
+        }
+
+        let person = Person(id: UUID(), name: name, longitude: longitude, latitude: latitude)
+
         do {
-            let person = Person(id: UUID(), name: name)
             people.append(person)
             let encoder = JSONEncoder()
             let json = try encoder.encode(people)

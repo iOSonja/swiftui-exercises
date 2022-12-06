@@ -7,10 +7,13 @@
 
 import Foundation
 import SwiftUI
+import CoreLocation
 
 struct Person: Codable, Comparable, Identifiable {
     let id: UUID
     let name: String
+    var longitude : Double?
+    var latitude : Double?
     
     static func <(lhs: Person, rhs: Person) -> Bool {
         lhs.name < rhs.name

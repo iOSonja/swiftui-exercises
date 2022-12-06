@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E943F18A293F8C9800689681 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943F189293F8C9800689681 /* LocationFetcher.swift */; };
+		E943F18C293F931C00689681 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943F18B293F931C00689681 /* MapView.swift */; };
 		E9A645BD292A9221004EA4C8 /* AcquaintancesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645BC292A9221004EA4C8 /* AcquaintancesApp.swift */; };
 		E9A645BF292A9221004EA4C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A645BE292A9221004EA4C8 /* ContentView.swift */; };
 		E9A645C1292A9222004EA4C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A645C0292A9222004EA4C8 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E943F189293F8C9800689681 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		E943F18B293F931C00689681 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E9A645B9292A9221004EA4C8 /* Acquaintances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acquaintances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A645BC292A9221004EA4C8 /* AcquaintancesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcquaintancesApp.swift; sourceTree = "<group>"; };
 		E9A645BE292A9221004EA4C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,12 +65,14 @@
 		E9A645BB292A9221004EA4C8 /* Acquaintances */ = {
 			isa = PBXGroup;
 			children = (
+				E943F18B293F931C00689681 /* MapView.swift */,
 				E9A645D0292C0C94004EA4C8 /* FileManager-Document.swift */,
 				E9A645CE292BEA9A004EA4C8 /* Person.swift */,
 				E9A645BC292A9221004EA4C8 /* AcquaintancesApp.swift */,
 				E9A645BE292A9221004EA4C8 /* ContentView.swift */,
 				E9A645D229313EEC004EA4C8 /* DetailView.swift */,
 				E9A645CC292A9E85004EA4C8 /* AddView.swift */,
+				E943F189293F8C9800689681 /* LocationFetcher.swift */,
 				E9A645CA292A9359004EA4C8 /* ImagePicker.swift */,
 				E9A645C0292A9222004EA4C8 /* Assets.xcassets */,
 				E9A645C2292A9222004EA4C8 /* Preview Content */,
@@ -154,10 +160,12 @@
 			files = (
 				E9A645CF292BEA9A004EA4C8 /* Person.swift in Sources */,
 				E9A645CD292A9E85004EA4C8 /* AddView.swift in Sources */,
+				E943F18A293F8C9800689681 /* LocationFetcher.swift in Sources */,
 				E9A645CB292A9359004EA4C8 /* ImagePicker.swift in Sources */,
 				E9A645D329313EEC004EA4C8 /* DetailView.swift in Sources */,
 				E9A645BF292A9221004EA4C8 /* ContentView.swift in Sources */,
 				E9A645D1292C0C94004EA4C8 /* FileManager-Document.swift in Sources */,
+				E943F18C293F931C00689681 /* MapView.swift in Sources */,
 				E9A645BD292A9221004EA4C8 /* AcquaintancesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Acquaintances/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to you to be able to check where you met your friends";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +326,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Acquaintances/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to you to be able to check where you met your friends";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
