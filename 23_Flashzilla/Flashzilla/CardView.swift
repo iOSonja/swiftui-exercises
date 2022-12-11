@@ -11,6 +11,7 @@ struct CardView: View {
     let card: Card
     var removal: (() -> Void)? = nil
 
+    @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
 
@@ -18,12 +19,17 @@ struct CardView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .fill(
-                    .white
-                        .opacity(1 - Double(abs(offset.width / 50)))
+                    differentiateWithoutColor
+                        ? .white
+                        : .white
+                            .opacity(1 - Double(abs(offset.width / 50)))
+
                 )
                 .background(
-                    RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .fill(offset.width > 0 ? .green : .red)
+                    differentiateWithoutColor
+                        ? nil
+                        : RoundedRectangle(cornerRadius: 25, style: .continuous)
+                            .fill(offset.width > 0 ? .green : .red)
                 )
                 .shadow(radius: 10)
 
