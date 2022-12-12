@@ -62,6 +62,7 @@ struct ContentView: View {
                         .background(.white)
                         .foregroundColor(.black)
                         .clipShape(Capsule())
+                        .padding()
                 }
             }
 
