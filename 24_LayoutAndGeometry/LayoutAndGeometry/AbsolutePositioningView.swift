@@ -18,7 +18,7 @@ struct AbsolutePositioningView: View {
                 .offset(x: 100, y: 100)
                 .background(.red)
 
-            Text("I am a text with a \nblue background \nan THEN an offset.")
+            Text("I am a text with a \nblue background \nand THEN an offset.")
                 .background(.blue.opacity(0.3))
                 .offset(x: -100, y: 100)
         }
