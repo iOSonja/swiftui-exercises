@@ -19,6 +19,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Absolute Positioning", systemImage: "align.vertical.top")
                 }
+
+            GeometryReaderCoordinates()
+                .tabItem {
+                    Label("GeometryReader", systemImage: "rectangle.center.inset.filled")
+                }
         }
     }
 }
