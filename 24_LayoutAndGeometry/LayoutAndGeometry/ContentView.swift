@@ -14,6 +14,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Custom Layout", systemImage: "align.vertical.center")
                 }
+            
+            AbsolutePositioningView()
+                .tabItem {
+                    Label("Absolute Positioning", systemImage: "align.vertical.top")
+                }
         }
     }
 }
