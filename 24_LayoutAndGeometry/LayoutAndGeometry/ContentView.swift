@@ -22,7 +22,12 @@ struct ContentView: View {
 
             GeometryReaderCoordinates()
                 .tabItem {
-                    Label("GeometryReader", systemImage: "rectangle.center.inset.filled")
+                    Label("Coordinates", systemImage: "rectangle.center.inset.filled")
+                }
+
+            GeometryReaderScrollView()
+                .tabItem {
+                    Label("ScrollViews", systemImage: "person")
                 }
         }
     }

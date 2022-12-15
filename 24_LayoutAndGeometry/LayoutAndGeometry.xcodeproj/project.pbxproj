@@ -14,6 +14,7 @@
 		BA7AE436294859E400275770 /* CustomLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AE435294859E400275770 /* CustomLayoutView.swift */; };
 		BAC9AD122949A4410059B9B8 /* AbsolutePositioningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9AD112949A4410059B9B8 /* AbsolutePositioningView.swift */; };
 		BAC9AD14294A0CD30059B9B8 /* GeometryReaderCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9AD13294A0CD30059B9B8 /* GeometryReaderCoordinates.swift */; };
+		BAC9AD16294B03880059B9B8 /* GeometryReaderScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9AD15294B03880059B9B8 /* GeometryReaderScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BA7AE435294859E400275770 /* CustomLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutView.swift; sourceTree = "<group>"; };
 		BAC9AD112949A4410059B9B8 /* AbsolutePositioningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePositioningView.swift; sourceTree = "<group>"; };
 		BAC9AD13294A0CD30059B9B8 /* GeometryReaderCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderCoordinates.swift; sourceTree = "<group>"; };
+		BAC9AD15294B03880059B9B8 /* GeometryReaderScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				BA7AE427294859AB00275770 /* LayoutAndGeometryApp.swift */,
 				BA7AE429294859AB00275770 /* ContentView.swift */,
+				BAC9AD15294B03880059B9B8 /* GeometryReaderScrollView.swift */,
 				BAC9AD112949A4410059B9B8 /* AbsolutePositioningView.swift */,
 				BAC9AD13294A0CD30059B9B8 /* GeometryReaderCoordinates.swift */,
 				BA7AE435294859E400275770 /* CustomLayoutView.swift */,
@@ -148,6 +151,7 @@
 			files = (
 				BAC9AD14294A0CD30059B9B8 /* GeometryReaderCoordinates.swift in Sources */,
 				BA7AE436294859E400275770 /* CustomLayoutView.swift in Sources */,
+				BAC9AD16294B03880059B9B8 /* GeometryReaderScrollView.swift in Sources */,
 				BAC9AD122949A4410059B9B8 /* AbsolutePositioningView.swift in Sources */,
 				BA7AE42A294859AB00275770 /* ContentView.swift in Sources */,
 				BA7AE428294859AB00275770 /* LayoutAndGeometryApp.swift in Sources */,
