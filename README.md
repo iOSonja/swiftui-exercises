@@ -17,7 +17,7 @@ The course consists of three different types of exercises:
 #### Projects
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | - | - |
+| x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | x | - |
 
 #### Challenges
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
@@ -45,6 +45,7 @@ The course consists of three different types of exercises:
 - Accessibility Project: A tiny collection of views with examples of modifiers adding accessibility improvements
 - Hot Prospects: A social app for scanning people's contacts with a QR code and storing them for later contacting
 - Flashzilla: Quiz card game with a timer
+- Layout and Geometry: A collection of views that are build using complex UI tools, e.g. GeometryReader
 
 
 ### Finished Challenges
