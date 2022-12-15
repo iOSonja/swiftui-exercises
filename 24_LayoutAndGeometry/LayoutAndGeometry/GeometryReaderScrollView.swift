@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HelixScrollView: View {
-    let colors: [Color] = [.red, .green, .blue, .orange, .pink, .purple, .yellow]
-
     var body: some View {
         Text("Scroll me vertically")
             .font(.headline)
@@ -20,7 +18,7 @@ struct HelixScrollView: View {
                         Text("Row #\(index)")
                             .font(.title)
                             .frame(maxWidth: .infinity)
-                            .background(colors[index % 7])
+                            .background(Color(hue: min(1, geo.frame(in: .global).minY / fullView.size.height), saturation: 1, brightness: 1))
                             .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
                             .opacity(geo.frame(in: .global).minY / 200)
                             .scaleEffect(max(0.5, geo.frame(in: .global).minY / 400))
