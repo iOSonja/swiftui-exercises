@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E96BAC50294E071900FA6CE9 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BAC4F294E071900FA6CE9 /* Facility.swift */; };
 		E9E98D61294DD10C0096F2B0 /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E98D60294DD10C0096F2B0 /* SnowSeekerApp.swift */; };
 		E9E98D63294DD10C0096F2B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E98D62294DD10C0096F2B0 /* ContentView.swift */; };
 		E9E98D65294DD10D0096F2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E98D64294DD10D0096F2B0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E96BAC4F294E071900FA6CE9 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 		E9E98D5D294DD10C0096F2B0 /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E98D60294DD10C0096F2B0 /* SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSeekerApp.swift; sourceTree = "<group>"; };
 		E9E98D62294DD10C0096F2B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		E9E98D54294DD10C0096F2B0 = {
 			isa = PBXGroup;
 			children = (
+				E96BAC4F294E071900FA6CE9 /* Facility.swift */,
 				E9E98D5F294DD10C0096F2B0 /* SnowSeeker */,
 				E9E98D5E294DD10C0096F2B0 /* Products */,
 			);
@@ -162,6 +165,7 @@
 				E9E98D75294DD6930096F2B0 /* WelcomeView.swift in Sources */,
 				E9E98D79294DEF150096F2B0 /* SkiDetailsView.swift in Sources */,
 				E9E98D7B294DEFE20096F2B0 /* ResortDetailsView.swift in Sources */,
+				E96BAC50294E071900FA6CE9 /* Facility.swift in Sources */,
 				E9E98D63294DD10C0096F2B0 /* ContentView.swift in Sources */,
 				E9E98D71294DD2230096F2B0 /* Resort.swift in Sources */,
 				E9E98D77294DE64E0096F2B0 /* ResortView.swift in Sources */,
