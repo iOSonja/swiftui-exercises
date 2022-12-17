@@ -31,7 +31,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List(filteredResorts) { resort in
+            List(sortedResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -93,20 +93,21 @@ struct ContentView: View {
     }
 
     var filteredResorts: [Resort] {
-        let result: [Resort]
-
         if searchText.isEmpty {
-            result = resorts
+            return resorts
         } else {
-            result = resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+            return resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
+    }
 
-        if sortOrder == .name {
-            return result.sorted { $0.name < $1.name }
-        } else if sortOrder == .country {
-            return result.sorted { $0.country < $1.country }
-        } else {
-            return result
+    var sortedResorts: [Resort] {
+        switch sortOrder {
+        case .default:
+            return filteredResorts
+        case .name:
+            return filteredResorts.sorted { $0.name < $1.name }
+        case .country:
+            return filteredResorts.sorted { $0.country < $1.country }
         }
     }
 }
