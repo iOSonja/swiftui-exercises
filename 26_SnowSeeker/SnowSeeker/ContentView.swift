@@ -20,8 +20,14 @@ extension View {
 struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
 
+    enum SortType {
+        case `default`, name, country
+    }
+
     @StateObject var favorites = Favorites()
     @State private var searchText = ""
+    @State private var isShowingDialog = false
+    @State private var sortOrder = SortType.default
 
     var body: some View {
         NavigationView {
@@ -60,6 +66,25 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                Button {
+                    isShowingDialog = true
+                } label : {
+                    Text("Sorting")
+                    Label("Sort resorts", systemImage: "arrow.up.arrow.down")
+                }
+            }
+            .confirmationDialog("Choose sorting", isPresented: $isShowingDialog) {
+                Button("Sort by resort name") {
+                 sortOrder = .name
+                }
+                Button("Sort by country") {
+                 sortOrder = .country
+                }
+                Button("Default sorting") {
+                    sortOrder = .default
+                }
+              }
             
             WelcomeView()
         }
@@ -68,10 +93,20 @@ struct ContentView: View {
     }
 
     var filteredResorts: [Resort] {
+        let result: [Resort]
+
         if searchText.isEmpty {
-            return resorts
+            result = resorts
         } else {
-            return resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+            result = resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+        }
+
+        if sortOrder == .name {
+            return result.sorted { $0.name < $1.name }
+        } else if sortOrder == .country {
+            return result.sorted { $0.country < $1.country }
+        } else {
+            return result
         }
     }
 }
