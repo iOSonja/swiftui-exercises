@@ -7,6 +7,27 @@
 
 import SwiftUI
 
+struct Watermark: ViewModifier {
+    var text: String
+
+    func body(content: Content) -> some View {
+        ZStack(alignment: .bottomTrailing) {
+            content
+            Text(text)
+                .font(.caption)
+                .foregroundColor(.white)
+                .padding(3)
+                .background(.blue)
+        }
+    }
+}
+
+extension View {
+    func watermarked(with text: String) -> some View {
+        modifier(Watermark(text: text))
+    }
+}
+
 struct ResortView: View {
     let resort: Resort
 
@@ -24,6 +45,7 @@ struct ResortView: View {
                 Image(decorative: resort.id)
                     .resizable()
                     .scaledToFit()
+                    .watermarked(with: "📸: \(resort.imageCredit)")
 
                 HStack {
                     if sizeClass == .compact && typeSize > .large {
